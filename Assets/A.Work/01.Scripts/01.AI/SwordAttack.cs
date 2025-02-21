@@ -13,6 +13,7 @@ public class SwordAttack : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            animator.SetTrigger("Attack");
             Debug.Log(1);
             Attack();
         }
@@ -21,8 +22,6 @@ public class SwordAttack : MonoBehaviour
 
     private void Attack()
     {
-        animator.SetTrigger("Attack");
-
         Collider[] hitEnemies = Physics.OverlapSphere(transform.position, attackRange, enemyLayer);
 
         foreach (Collider enemy in hitEnemies)
