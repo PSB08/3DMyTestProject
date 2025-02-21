@@ -4,37 +4,36 @@ using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
-    public Animator animator; // 애니메이터
-    public float attackRange = 1.5f; // 공격 범위
-    public int attackDamage = 20; // 공격력
-    public LayerMask enemyLayer; // 공격할 대상 (적)
+    public Animator animator;
+    public float attackRange = 1.5f;
+    public int attackDamage = 20;
+    public LayerMask enemyLayer;
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // 마우스 왼쪽 클릭 감지
+        if (Input.GetMouseButtonDown(0))
         {
             Debug.Log(1);
             Attack();
         }
+        animator.SetTrigger("Idle");
     }
 
     private void Attack()
     {
-        // 애니메이션 실행
         animator.SetTrigger("Attack");
 
-        // 공격 범위 내의 적을 감지
         Collider[] hitEnemies = Physics.OverlapSphere(transform.position, attackRange, enemyLayer);
 
         foreach (Collider enemy in hitEnemies)
         {
             Debug.Log("적 적중: " + enemy.name);
+            Destroy(enemy.gameObject);
         }
     }
 
     private void OnDrawGizmosSelected()
     {
-        // 공격 범위 시각화
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }
