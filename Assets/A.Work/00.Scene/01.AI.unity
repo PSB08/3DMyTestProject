@@ -1739,7 +1739,7 @@ Transform:
   m_GameObject: {fileID: 4334314812807015682}
   serializedVersion: 2
   m_LocalRotation: {x: 0.098410234, y: 0.7002253, z: 0.098410234, w: 0.7002253}
-  m_LocalPosition: {x: 1.3, y: 0.09, z: 1.76}
+  m_LocalPosition: {x: 1.3, y: 0, z: 2}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1785,6 +1785,8 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  attackComboMax: 2
+  comboResetTime: 1
 --- !u!4 &4334314813240373457
 Transform:
   m_ObjectHideFlags: 0
