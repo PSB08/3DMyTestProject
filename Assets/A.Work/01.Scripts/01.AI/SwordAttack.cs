@@ -14,19 +14,21 @@ public class SwordAttack : MonoBehaviour
     public float comboResetTime = 1.0f;
     private bool isAttacking = false;
     private bool nextComboQueued = false;
+    private bool isHoldingAttack = false;
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
-            if (isAttacking)
-            {
-                nextComboQueued = true;
-            }
-            else
+            isHoldingAttack = true;
+            if (!isAttacking)
             {
                 Attack();
             }
+        }
+        else
+        {
+            isHoldingAttack = false;
         }
 
         if (Time.time - lastAttackTime > comboResetTime)
@@ -50,9 +52,8 @@ public class SwordAttack : MonoBehaviour
     public void OnAttackAnimationEnd()
     {
         isAttacking = false;
-        if (nextComboQueued)
+        if (isHoldingAttack)
         {
-            nextComboQueued = false;
             Attack();
         }
     }
