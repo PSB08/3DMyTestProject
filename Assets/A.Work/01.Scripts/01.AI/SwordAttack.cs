@@ -74,10 +74,10 @@ public class SwordAttack : MonoBehaviour
         }
     }
 
-    /*private void OnDrawGizmosSelected()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
-    }*/
+    }
 
 }
