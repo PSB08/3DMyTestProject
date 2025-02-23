@@ -38,6 +38,12 @@ public class SwordAttack : MonoBehaviour
             nextComboQueued = false;
             animator.SetTrigger("Idle");
         }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            animator.SetTrigger("Shield");
+        }
+
     }
 
     private void Attack()
