@@ -13,7 +13,6 @@ public class SwordAttack : MonoBehaviour
     private float lastAttackTime;
     public float comboResetTime = 1.0f;
     private bool isAttacking = false;
-    private bool nextComboQueued = false;
     private bool isHoldingAttack = false;
 
     private void Update()
@@ -35,7 +34,6 @@ public class SwordAttack : MonoBehaviour
         {
             attackCombo = 0;
             isAttacking = false;
-            nextComboQueued = false;
             animator.SetTrigger("Idle");
         }
 
