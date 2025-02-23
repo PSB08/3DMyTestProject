@@ -1395,6 +1395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a974ee3a5976043ba078944ca7fe03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 1356347685}
 --- !u!65 &1296452892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1554,6 +1555,7 @@ MonoBehaviour:
   moveSpeed: 5
   mouseSensitivity: 100
   jumpHeight: 2
+  isResetting: 0
 --- !u!143 &1356347686
 CharacterController:
   m_ObjectHideFlags: 0

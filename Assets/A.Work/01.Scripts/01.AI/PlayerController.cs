@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Vector3 velocity;
     private float gravity = -9.81f;
+    public bool isResetting = false;
 
     void Start()
     {
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (isResetting) return;
+
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
@@ -50,4 +53,7 @@ public class PlayerController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
+
+
+
 }
