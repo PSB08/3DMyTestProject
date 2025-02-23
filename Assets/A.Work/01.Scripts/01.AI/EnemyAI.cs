@@ -8,12 +8,17 @@ public class EnemyAI : MonoBehaviour
     public Transform player; // 플레이어 위치
     private NavMeshAgent agent; // NavMeshAgent
 
-    void Start()
+    private void Start()
     {
         agent = GetComponent<NavMeshAgent>(); // NavMeshAgent 가져오기
+        GameObject playerObj = GameObject.FindWithTag("MainCamera");
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+        }
     }
 
-    void Update()
+    private void Update()
     {
         if (player != null)
         {
