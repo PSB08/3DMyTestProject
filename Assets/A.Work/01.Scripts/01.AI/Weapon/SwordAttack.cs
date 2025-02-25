@@ -72,7 +72,12 @@ public class SwordAttack : MonoBehaviour
             enemyHp.TakeDamage(20f);
         }
     }
-
+    void OnDisable()
+    {
+        Quaternion rot = Quaternion.Euler(0, 90, 16);
+        transform.localPosition = new Vector3(1.3f, 0, 2);
+        transform.localRotation = rot;
+    }
     /*private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
