@@ -24,5 +24,6 @@ public class EnemyAI : MonoBehaviour
         {
             agent.SetDestination(player.position); // 플레이어를 따라감
         }
+
     }
 }

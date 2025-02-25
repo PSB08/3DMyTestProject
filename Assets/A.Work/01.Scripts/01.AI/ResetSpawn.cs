@@ -5,13 +5,12 @@ using UnityEngine;
 public class ResetSpawn : MonoBehaviour
 {
     public PlayerController playerController;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("ResetGround"))
         {
-            Debug.Log(1);
-            Camera.main.transform.position = new Vector3(0, 3.7f, -7.4f);
-            Debug.Log(2);
+            playerController.transform.position = new Vector3(0, 3.7f, -7.4f);
             if (playerController != null)
             {
                 playerController.isResetting = true;
@@ -19,6 +18,7 @@ public class ResetSpawn : MonoBehaviour
             StartCoroutine(ResetPlayer(playerController));
         }
     }
+
     private IEnumerator ResetPlayer(PlayerController playerController)
     {
         yield return new WaitForSeconds(0.1f);
