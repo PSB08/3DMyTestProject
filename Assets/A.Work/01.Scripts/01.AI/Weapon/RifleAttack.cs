@@ -9,28 +9,55 @@ public class RifleAttack : MonoBehaviour
     public Transform firePoint;
     public float fireForce = 30f;
     public float fireRate = 0.2f; //발사 간격 (초 단위)
+    public float rightFireRate = 5f;
+    public int bulletCount = 5; // 발사할 총알 개수
+    public float spreadAngle = 15f; // 산탄총 발사 각도
 
     private float nextFireTime = 0f;
+    private float nextRightFireTime = 0f;
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime) // 쿨타임 적용
+        if (Input.GetMouseButtonDown(0) && Time.time >= nextFireTime) // 좌클릭
         {
             nextFireTime = Time.time + fireRate; // 다음 발사 가능 시간 설정
             Shoot();
+            animator.SetTrigger("Idle");
+        }
+        if (Input.GetMouseButtonDown(1) && Time.time >= nextRightFireTime) // 마우스 우클릭
+        {
+            nextRightFireTime = Time.time + rightFireRate;
+            ShootShotgun();
             animator.SetTrigger("Idle");
         }
     }
 
     private void Shoot()
     {
+        FireBullet(firePoint.forward);
         animator.SetTrigger("Attack");
+    }
+
+    private void ShootShotgun()
+    {
+        for (int i = 0; i < bulletCount; i++)
+        {
+            float angle = Random.Range(-spreadAngle, spreadAngle);
+            Quaternion bulletRotation = Quaternion.Euler(0, angle, 0);
+            Vector3 shootDirection = bulletRotation * firePoint.forward;
+            FireBullet(shootDirection);
+        }
+        animator.SetTrigger("Attack");
+    }
+
+    private void FireBullet(Vector3 direction)
+    {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
 
-        bullet.transform.forward = firePoint.forward; // 총알이 총구 방향을 바라보도록 설정
+        bullet.transform.forward = direction;
         rb.useGravity = false;
-        rb.AddForce(firePoint.forward * fireForce, ForceMode.Impulse);
+        rb.AddForce(direction * fireForce, ForceMode.Impulse);
     }
 
     private void OnDisable()
