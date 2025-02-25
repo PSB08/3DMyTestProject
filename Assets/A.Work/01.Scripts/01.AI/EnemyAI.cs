@@ -26,4 +26,14 @@ public class EnemyAI : MonoBehaviour
         }
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            HpSystem hp = other.gameObject.GetComponent<HpSystem>();
+            hp.TakeDamage(20f);
+        }
+    }
+
 }
