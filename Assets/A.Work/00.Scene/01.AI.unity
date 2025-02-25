@@ -1972,6 +1972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 1356347685}
+  hpSystem: {fileID: 1296452894}
 --- !u!65 &1296452892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2976,6 +2977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 913065557549367111}
   - component: {fileID: 913065557549367112}
+  - component: {fileID: 913065557549367113}
   m_Layer: 0
   m_Name: Rifle
   m_TagString: Untagged
@@ -3015,7 +3017,7 @@ Transform:
   m_GameObject: {fileID: 567467734710871549}
   serializedVersion: 2
   m_LocalRotation: {x: -0.13052616, y: -0, z: -0, w: 0.9914449}
-  m_LocalPosition: {x: 0.789, y: -0.09000003, z: 1.208}
+  m_LocalPosition: {x: 0.8, y: 0, z: 1.2}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -3039,9 +3041,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f90ba5599056c40924673109bac75e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 913065557549367113}
   bulletPrefab: {fileID: 3505294071486683641, guid: 1de4f910e50bb294ea45213257da6cf6, type: 3}
   firePoint: {fileID: 576694707}
   fireForce: 20
+  fireRate: 1
+--- !u!95 &913065557549367113
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567467734710871549}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e1c7be569d0ceb741a7f2b005b563580, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1251344386227668227
 Transform:
   m_ObjectHideFlags: 0

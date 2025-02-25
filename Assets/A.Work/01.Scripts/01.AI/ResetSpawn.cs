@@ -5,6 +5,7 @@ using UnityEngine;
 public class ResetSpawn : MonoBehaviour
 {
     public PlayerController playerController;
+    public HpSystem hpSystem;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,6 +15,7 @@ public class ResetSpawn : MonoBehaviour
             if (playerController != null)
             {
                 playerController.isResetting = true;
+                hpSystem.TakeDamage(50f);
             }
             StartCoroutine(ResetPlayer(playerController));
         }
