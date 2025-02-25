@@ -68,6 +68,8 @@ public class SwordAttack : MonoBehaviour
         foreach (Collider enemy in hitEnemies)
         {
             Debug.Log("Рћ РћСп: " + enemy.name);
+            HpSystem enemyHp = enemy.GetComponent<HpSystem>();
+            enemyHp.TakeDamage(20f);
         }
     }
 
