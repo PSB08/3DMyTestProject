@@ -39,6 +39,7 @@ public class EnemyAI : MonoBehaviour
             HpSystem hp = gameObject.GetComponent<HpSystem>();
             hp.TakeDamage(30f);
             Destroy(other.gameObject);
+            Debug.Log("ÃÑ¾Ë ÀûÁß");
         }
     }
 

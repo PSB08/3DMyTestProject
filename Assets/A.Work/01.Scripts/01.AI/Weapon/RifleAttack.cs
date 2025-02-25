@@ -32,6 +32,7 @@ public class RifleAttack : MonoBehaviour
         rb.useGravity = false;
         rb.AddForce(firePoint.forward * fireForce, ForceMode.Impulse);
     }
+
     private void OnDisable()
     {
         Quaternion rot = Quaternion.Euler(-15, 0, 0);
