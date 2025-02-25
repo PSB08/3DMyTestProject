@@ -2488,6 +2488,7 @@ GameObject:
   - component: {fileID: 4334314812807015692}
   - component: {fileID: 4334314812807015693}
   - component: {fileID: 4334314812807015694}
+  - component: {fileID: 4334314812807015695}
   m_Layer: 0
   m_Name: LongSword
   m_TagString: Untagged
@@ -2551,6 +2552,19 @@ MonoBehaviour:
     m_Bits: 128
   attackComboMax: 2
   comboResetTime: 1
+--- !u!114 &4334314812807015695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4334314812807015682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dce03f265245cc4fb8082f62e26d755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!4 &4334314813240373457
 Transform:
   m_ObjectHideFlags: 0

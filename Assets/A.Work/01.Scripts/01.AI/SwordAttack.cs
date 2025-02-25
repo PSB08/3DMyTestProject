@@ -68,7 +68,6 @@ public class SwordAttack : MonoBehaviour
         foreach (Collider enemy in hitEnemies)
         {
             Debug.Log("Рћ РћСп: " + enemy.name);
-            Destroy(enemy.gameObject);
         }
     }
 
