@@ -14,7 +14,7 @@ public class ResetSpawn : MonoBehaviour
             Debug.Log(2);
             if (playerController != null)
             {
-                playerController.isResetting = true; // 회전 막기
+                playerController.isResetting = true;
             }
             StartCoroutine(ResetPlayer(playerController));
         }
@@ -22,7 +22,7 @@ public class ResetSpawn : MonoBehaviour
     private IEnumerator ResetPlayer(PlayerController playerController)
     {
         yield return new WaitForSeconds(0.1f);
-        playerController.isResetting = false; // 다시 움직일 수 있도록 설정
+        playerController.isResetting = false;
     }
 
 
