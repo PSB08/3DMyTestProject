@@ -276,7 +276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &220281680
 Transform:
   m_ObjectHideFlags: 0
@@ -1172,7 +1172,7 @@ Transform:
   m_GameObject: {fileID: 576694706}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4.0745363e-10, y: 0.40700004, z: 0.000000029802322}
+  m_LocalPosition: {x: -4.0745363e-10, y: 0.407, z: 0.0118}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3039,7 +3039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f90ba5599056c40924673109bac75e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8372417336195832569, guid: 2e84780b8835bf146b70f56a4aa77f18, type: 3}
+  bulletPrefab: {fileID: 3505294071486683641, guid: 1de4f910e50bb294ea45213257da6cf6, type: 3}
   firePoint: {fileID: 576694707}
   fireForce: 20
 --- !u!4 &1251344386227668227

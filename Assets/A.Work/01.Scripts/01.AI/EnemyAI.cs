@@ -34,6 +34,12 @@ public class EnemyAI : MonoBehaviour
             HpSystem hp = other.gameObject.GetComponent<HpSystem>();
             hp.TakeDamage(20f);
         }
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            HpSystem hp = gameObject.GetComponent<HpSystem>();
+            hp.TakeDamage(30f);
+            Destroy(other.gameObject);
+        }
     }
 
 }
