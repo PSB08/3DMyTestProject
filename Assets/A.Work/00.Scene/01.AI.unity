@@ -2911,7 +2911,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &861401870687867204
 Transform:
   m_ObjectHideFlags: 0
@@ -3513,6 +3513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4334314812807015693}
+  hpSystem: {fileID: 2008487842}
   attackRange: 1.5
   enemyLayer:
     serializedVersion: 2
@@ -4233,9 +4234,9 @@ Transform:
   m_GameObject: {fileID: 7252557991479718505}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.96, z: 0.26}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: -1.052, z: -0.085}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3227604794508335044}
   - {fileID: 4765227227872353536}

@@ -10,7 +10,7 @@ public class HpText : MonoBehaviour
 
     private void Update()
     {
-        hpText.text = $"HP : {hpSystem.currentHealth.ToString()}";
+        hpText.text = $"HP : {hpSystem.currentHealth.ToString("F0")}";
     }
 
 }

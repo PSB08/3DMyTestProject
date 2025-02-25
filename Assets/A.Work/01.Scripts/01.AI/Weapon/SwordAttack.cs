@@ -4,19 +4,31 @@ using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
+    [Header("Component")]
     public Animator animator;
+    public HpSystem hpSystem;
+    [Header("Value")]
     public float attackRange = 1.5f;
     public LayerMask enemyLayer;
     public int attackComboMax = 2;
+    public float comboResetTime = 1.0f;
 
     private int attackCombo = 0;
     private float lastAttackTime;
-    public float comboResetTime = 1.0f;
     private bool isAttacking = false;
     private bool isHoldingAttack = false;
 
     private void Update()
     {
+        if (Input.GetMouseButton(1))
+        {
+            animator.SetBool("Shield", true);
+        }
+        else
+        {
+            animator.SetBool("Shield", false);
+        }
+
         if (Input.GetMouseButton(0))
         {
             isHoldingAttack = true;
@@ -37,10 +49,6 @@ public class SwordAttack : MonoBehaviour
             animator.SetTrigger("Idle");
         }
 
-        if (Input.GetMouseButtonDown(1))
-        {
-            animator.SetTrigger("Shield");
-        }
 
     }
 
@@ -79,6 +87,10 @@ public class SwordAttack : MonoBehaviour
         transform.localPosition = new Vector3(1.3f, 0, 2);
         transform.localRotation = rot;
     }
-    
+   
+    public void ShieldHeal(float x)
+    {
+        hpSystem.Heal(x);
+    }
 
 }

@@ -11,7 +11,7 @@ public class WeaponControll : MonoBehaviour
     {
         for (int i = 0; i < weapons.Count; i++)
         {
-            weapons[i].active = (i == 0);
+            weapons[i].SetActive(i == 0);
         }
     }
 
@@ -20,15 +20,15 @@ public class WeaponControll : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             currentWeaponIndex = (currentWeaponIndex + 1) % weapons.Count;
-            SwitchCamera(currentWeaponIndex);
+            SwitchWeapon(currentWeaponIndex);
         }
     }
 
-    private void SwitchCamera(int index)
+    private void SwitchWeapon(int index)
     {
         for (int i = 0; i < weapons.Count; i++)
         {
-            weapons[i].active = (i == index);
+            weapons[i].SetActive(i == index);
         }
     }
 
