@@ -46,7 +46,7 @@ public class HpSystem : MonoBehaviour
     // 사망 처리 메서드
     private void Die()
     {
-        if (gameObject.name == "Player")
+        if (gameObject.name.Contains("Player"))
         {
             SceneManager.LoadScene(0);
         }
