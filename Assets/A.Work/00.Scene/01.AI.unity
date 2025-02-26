@@ -2279,7 +2279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1591834878}
   m_Layer: 0
-  m_Name: UpBridge (1)
+  m_Name: UpBridge2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
