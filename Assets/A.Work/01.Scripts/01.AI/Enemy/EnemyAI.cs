@@ -7,11 +7,15 @@ public class EnemyAI : MonoBehaviour
 {
     public Transform player; // 플레이어 위치
     private NavMeshAgent agent; // NavMeshAgent
+    private MeshRenderer mesh;
+    private Color startColor;
 
     private void Start()
     {
+        mesh = gameObject.GetComponent<MeshRenderer>();
         agent = GetComponent<NavMeshAgent>(); // NavMeshAgent 가져오기
         GameObject playerObj = GameObject.FindWithTag("MainCamera");
+        startColor = mesh.material.color;
         if (playerObj != null)
         {
             player = playerObj.transform;
@@ -46,10 +50,9 @@ public class EnemyAI : MonoBehaviour
 
     private IEnumerator Hit()
     {
-        MeshRenderer mesh = gameObject.GetComponent<MeshRenderer>();
         mesh.material.color = Color.red;
         yield return new WaitForSeconds(0.2f);
-        mesh.material.color = Color.white;
+        mesh.material.color = startColor;
     }
 
 }
