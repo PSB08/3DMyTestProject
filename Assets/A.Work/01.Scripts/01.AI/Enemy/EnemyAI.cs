@@ -36,11 +36,20 @@ public class EnemyAI : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Bullet"))
         {
+            StartCoroutine(Hit());
             HpSystem hp = gameObject.GetComponent<HpSystem>();
-            hp.TakeDamage(30f);
+            hp.TakeDamage(50f);
             Destroy(other.gameObject);
             Debug.Log("ÃÑ¾Ë ÀûÁß");
         }
+    }
+
+    private IEnumerator Hit()
+    {
+        MeshRenderer mesh = gameObject.GetComponent<MeshRenderer>();
+        mesh.material.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        mesh.material.color = Color.white;
     }
 
 }

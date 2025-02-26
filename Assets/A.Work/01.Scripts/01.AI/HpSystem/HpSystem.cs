@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class HpSystem : MonoBehaviour
@@ -11,7 +12,7 @@ public class HpSystem : MonoBehaviour
     public float currentHealth;
 
     public event Action<float, float> OnHealthChanged;
-    public event Action OnDeath;
+    public UnityEvent OnDeath;
 
     private void Awake()
     {
@@ -52,7 +53,6 @@ public class HpSystem : MonoBehaviour
         }
         if (gameObject.name.Contains("Enemy"))
         {
-            Debug.Log(gameObject.name + "이(가) 사망했습니다.");
             Destroy(gameObject);
         }
         OnDeath?.Invoke(); // 사망 이벤트 실행
