@@ -13,6 +13,11 @@ public class TeamManager : MonoBehaviour
     public Transform[] playerTransforms;
     public Transform[] enemyTransforms;
 
+    private void Update()
+    {
+        CheckTeams();
+    }
+
     public void InitializeTeams()
     {
         // Àû ¼ÒÈ¯
@@ -32,7 +37,27 @@ public class TeamManager : MonoBehaviour
             Player player = playerObject.GetComponent<Player>();
             playerTeam.Add(player);
         }
+    }
 
+    private void CheckTeams()
+    {
+        for (int i = playerTeam.Count - 1; i >= 0; i--)
+        {
+            if (playerTeam[i].Health <= 0)
+            {
+                Destroy(playerTeam[i].gameObject);
+                playerTeam.RemoveAt(i);
+            }
+        }
+
+        for (int i = enemyTeam.Count - 1; i >= 0; i--)
+        {
+            if (enemyTeam[i].Health <= 0)
+            {
+                Destroy(enemyTeam[i].gameObject);
+                enemyTeam.RemoveAt(i);
+            }
+        }
     }
 
 }

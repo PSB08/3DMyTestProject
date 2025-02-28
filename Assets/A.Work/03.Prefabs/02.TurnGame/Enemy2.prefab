@@ -121,5 +121,6 @@ MonoBehaviour:
   CharacterName: Enemy2
   Health: 100
   AttackPower: 10
-  Speed: 80
+  Speed: 4
+  AttackMoveSpeed: 3
   playerTransforms: []

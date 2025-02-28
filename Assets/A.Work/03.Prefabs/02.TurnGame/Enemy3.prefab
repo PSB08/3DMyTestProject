@@ -121,5 +121,6 @@ MonoBehaviour:
   CharacterName: Enemy3
   Health: 100
   AttackPower: 10
-  Speed: 80
+  Speed: 6
+  AttackMoveSpeed: 3
   playerTransforms: []

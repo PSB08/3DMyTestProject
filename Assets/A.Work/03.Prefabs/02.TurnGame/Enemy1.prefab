@@ -121,7 +121,8 @@ MonoBehaviour:
   CharacterName: Enemy1
   Health: 100
   AttackPower: 10
-  Speed: 80
+  Speed: 1
+  AttackMoveSpeed: 3
   playerTransforms:
   - {fileID: 1537009973158087518, guid: 39f42321ab6d942458ede3d0a4aee05a, type: 3}
   - {fileID: 2908095142017093682, guid: c068484636492bc4caf14e74ba283118, type: 3}
