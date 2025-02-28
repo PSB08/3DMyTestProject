@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class HpSystem : MonoBehaviour
 {
-    public static HpSystem Instance { get; private set; }
-
     [Header("체력 설정")]
     public float maxHealth = 100f;
     public float currentHealth;
