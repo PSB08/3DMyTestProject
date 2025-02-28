@@ -29,6 +29,7 @@ public class TurnManager : MonoBehaviour
         if (currentCharacter is Enemy enemy)
         {
             enemy.AttackRandomPlayer();
+            NextTurn(); // 적 공격 후 다음 턴으로 넘어가기
         }
     }
 

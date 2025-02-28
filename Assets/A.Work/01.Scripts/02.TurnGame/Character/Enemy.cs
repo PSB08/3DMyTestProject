@@ -9,9 +9,16 @@ public class Enemy : MonoBehaviour
     public float Speed;            // 속도
     public Transform[] playerTransforms; // 플레이어 위치 배열
 
-    public void Initialize(Transform[] playerTransforms)
+    private void Start()
     {
-        this.playerTransforms = playerTransforms; // 플레이어 Transform 배열 초기화
+        // 태그가 "Player"인 모든 GameObject를 찾아서 playerTransforms 배열에 추가
+        GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
+        playerTransforms = new Transform[playerObjects.Length];
+
+        for (int i = 0; i < playerObjects.Length; i++)
+        {
+            playerTransforms[i] = playerObjects[i].transform;
+        }
     }
 
     public void AttackRandomPlayer()
@@ -21,7 +28,6 @@ public class Enemy : MonoBehaviour
             // 랜덤으로 플레이어 선택
             int randomIndex = Random.Range(0, playerTransforms.Length);
             Player target = playerTransforms[randomIndex].GetComponent<Player>();
-
             if (target != null && target.Health > 0)
             {
                 target.Health -= AttackPower; // 공격력만큼 체력 감소

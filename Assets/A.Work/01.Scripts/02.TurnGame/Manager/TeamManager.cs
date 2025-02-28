@@ -15,6 +15,15 @@ public class TeamManager : MonoBehaviour
 
     public void InitializeTeams()
     {
+        // 적 소환
+        for (int j = 0; j < enemyTransforms.Length; j++)
+        {
+            GameObject enemyObject = Instantiate(enemyPrefabs[j], 
+                enemyTransforms[j].position, enemyTransforms[j].rotation);
+            Enemy enemy = enemyObject.GetComponent<Enemy>();
+            enemyTeam.Add(enemy);
+        }
+
         // 플레이어 소환
         for (int i = 0; i < playerTransforms.Length; i++)
         {
@@ -24,15 +33,6 @@ public class TeamManager : MonoBehaviour
             playerTeam.Add(player);
         }
 
-        // 적 소환
-        for (int j = 0; j < enemyTransforms.Length; j++)
-        {
-            GameObject enemyObject = Instantiate(enemyPrefabs[j], 
-                enemyTransforms[j].position, enemyTransforms[j].rotation);
-            Enemy enemy = enemyObject.GetComponent<Enemy>();
-            enemy.Initialize(playerTransforms); // 플레이어 Transform 배열 전달
-            enemyTeam.Add(enemy);
-        }
     }
 
 }

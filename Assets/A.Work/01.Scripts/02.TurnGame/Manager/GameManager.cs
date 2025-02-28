@@ -11,9 +11,6 @@ public class GameManager : MonoBehaviour
         teamManager.InitializeTeams();
         turnManager.SetupTurnOrder(teamManager.playerTeam, teamManager.enemyTeam);
         turnManager.NextTurn(); // 첫 턴을 시작합니다.
-
-        // 매 턴마다 적이 공격하도록 설정 (예: 2초마다)
-        InvokeRepeating("EnemyAttack", 1f, 2f);
     }
 
     public void PlayerAttack(Enemy target)
@@ -24,17 +21,6 @@ public class GameManager : MonoBehaviour
         {
             currentPlayer.Attack(target);
             turnManager.NextTurn(); // 공격 후 턴 넘기기
-        }
-    }
-
-    private void EnemyAttack()
-    {
-        foreach (var enemy in teamManager.enemyTeam)
-        {
-            if (enemy != null)
-            {
-                enemy.AttackRandomPlayer();
-            }
         }
     }
 
@@ -60,5 +46,6 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
 
 }

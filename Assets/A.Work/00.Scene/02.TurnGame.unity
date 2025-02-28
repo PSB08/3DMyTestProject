@@ -427,8 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffb677f0da43f4c40972898105454ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentTurnIndex: 0
-  turnOrder: []
+  currentTurnIndex: -1
 --- !u!114 &305909096
 MonoBehaviour:
   m_ObjectHideFlags: 0

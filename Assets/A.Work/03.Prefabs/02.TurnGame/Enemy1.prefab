@@ -122,4 +122,8 @@ MonoBehaviour:
   Health: 100
   AttackPower: 10
   Speed: 80
-  playerTransforms: []
+  playerTransforms:
+  - {fileID: 1537009973158087518, guid: 39f42321ab6d942458ede3d0a4aee05a, type: 3}
+  - {fileID: 2908095142017093682, guid: c068484636492bc4caf14e74ba283118, type: 3}
+  - {fileID: 5968121812916963527, guid: 87e84b16599188f4e80c32ed6325edb0, type: 3}
+  - {fileID: 5906833091482835536, guid: d22bebcfae43b9247b8a9d1fc4301d94, type: 3}
