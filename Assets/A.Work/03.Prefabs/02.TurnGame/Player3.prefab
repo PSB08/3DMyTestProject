@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1752048272394017193}
   - component: {fileID: 3693360649424416366}
   - component: {fileID: 6638645108792754737}
-  - component: {fileID: 1413059719886492695}
   m_Layer: 0
   m_Name: Player3
   m_TagString: Player
@@ -106,24 +105,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1413059719886492695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2568190125363237921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c3c1c589cb0a15449d670fe9f322971, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Player3
-  maxHealth: 120
-  currentHealth: 0
-  attack: 20
-  defense: 15
-  speed: 120
-  isPlayerTeam: 1
-  hasTakenTurn: 0
-  animator: {fileID: 0}

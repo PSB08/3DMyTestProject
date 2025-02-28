@@ -390,7 +390,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 305909094}
-  - component: {fileID: 305909095}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -413,40 +412,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &305909095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305909093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64673c9b3801c6a47b1e7ef88a7fd15c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCharacterPrefabs:
-  - {fileID: 5081182562940651445, guid: 39f42321ab6d942458ede3d0a4aee05a, type: 3}
-  - {fileID: 3164502242948580700, guid: c068484636492bc4caf14e74ba283118, type: 3}
-  - {fileID: 2568190125363237921, guid: 87e84b16599188f4e80c32ed6325edb0, type: 3}
-  - {fileID: 271693692998159450, guid: d22bebcfae43b9247b8a9d1fc4301d94, type: 3}
-  enemyCharacterPrefabs:
-  - {fileID: 7629807456575242543, guid: 1a50d9b65bd7973418652aed6a2ee0d0, type: 3}
-  - {fileID: 2849868235987711166, guid: f0befca31c40db54faa01ba0111c5ae7, type: 3}
-  - {fileID: 9219892660693684140, guid: d0023722db1d00d48a5a8a4c8f4d40af, type: 3}
-  - {fileID: 8433479781904138147, guid: 5c15bc8467a1d914db9fc6d2b4113c1a, type: 3}
-  - {fileID: 5529927383497635851, guid: 9e5f6c34f4bd4b64e9f8caa85ec7e150, type: 3}
-  playerPositions:
-  - {fileID: 1841359769}
-  - {fileID: 1089290822}
-  - {fileID: 1858425961}
-  - {fileID: 1850337474}
-  enemyPositions:
-  - {fileID: 1520444077}
-  - {fileID: 232274484}
-  - {fileID: 1516486117}
-  - {fileID: 465663383}
-  - {fileID: 1615366386}
 --- !u!1 &465663382
 GameObject:
   m_ObjectHideFlags: 0
