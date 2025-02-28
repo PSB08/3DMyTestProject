@@ -391,9 +391,6 @@ GameObject:
   m_Component:
   - component: {fileID: 305909094}
   - component: {fileID: 305909095}
-  - component: {fileID: 305909098}
-  - component: {fileID: 305909097}
-  - component: {fileID: 305909096}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -450,61 +447,6 @@ MonoBehaviour:
   - {fileID: 1516486117}
   - {fileID: 465663383}
   - {fileID: 1615366386}
---- !u!114 &305909096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305909093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99d4e2b1bb1efb04daa8ebdad68b3ef3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  canSelectTarget: 0
---- !u!114 &305909097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305909093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3498e7a81f1d0d47a90d347198e4004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &305909098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305909093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aeefd07b93ca9c45bee9e887f8697d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTeam:
-  - {fileID: 6753121902482426373, guid: 39f42321ab6d942458ede3d0a4aee05a, type: 3}
-  - {fileID: 3729375039205785363, guid: c068484636492bc4caf14e74ba283118, type: 3}
-  - {fileID: 1413059719886492695, guid: 87e84b16599188f4e80c32ed6325edb0, type: 3}
-  - {fileID: 8287936327492527118, guid: d22bebcfae43b9247b8a9d1fc4301d94, type: 3}
-  enemyTeam:
-  - {fileID: 6847844709433929310, guid: 1a50d9b65bd7973418652aed6a2ee0d0, type: 3}
-  - {fileID: 5649396966562915449, guid: f0befca31c40db54faa01ba0111c5ae7, type: 3}
-  - {fileID: 4666818071233546582, guid: d0023722db1d00d48a5a8a4c8f4d40af, type: 3}
-  - {fileID: 2043030006502946926, guid: 5c15bc8467a1d914db9fc6d2b4113c1a, type: 3}
-  - {fileID: 2497609944213325008, guid: 9e5f6c34f4bd4b64e9f8caa85ec7e150, type: 3}
-  turnOrder: []
-  currentCharacter: {fileID: 0}
-  isPlayerTurn: 0
-  isCombatActive: 0
 --- !u!1 &465663382
 GameObject:
   m_ObjectHideFlags: 0
