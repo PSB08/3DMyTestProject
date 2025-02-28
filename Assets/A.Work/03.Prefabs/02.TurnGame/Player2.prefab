@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5184240793559083087}
   - component: {fileID: 2813545031489264351}
   - component: {fileID: 8512611605521006204}
+  - component: {fileID: 3815863905089580341}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -105,3 +106,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3815863905089580341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3164502242948580700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02fa334285ef842429519defdc3fb046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterName: Player2
+  Health: 120
+  AttackPower: 20
+  Speed: 110

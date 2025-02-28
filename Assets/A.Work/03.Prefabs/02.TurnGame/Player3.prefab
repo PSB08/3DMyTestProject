@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1752048272394017193}
   - component: {fileID: 3693360649424416366}
   - component: {fileID: 6638645108792754737}
+  - component: {fileID: 7787057918883496748}
   m_Layer: 0
   m_Name: Player3
   m_TagString: Player
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c8d0755c8bd11e649a9a9d315436cc80, type: 2}
+  - {fileID: 2100000, guid: 6046e800730994c45af2ddad7f5f4b2e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -105,3 +106,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7787057918883496748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2568190125363237921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02fa334285ef842429519defdc3fb046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterName: Player3
+  Health: 120
+  AttackPower: 20
+  Speed: 110
