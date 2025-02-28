@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class TeamManager : MonoBehaviour
 {
-    public GameObject[] playerPrefabs; // 플레이어 프리팹 배열
-    public GameObject[] enemyPrefabs;  // 적 프리팹 배열
+    public GameObject[] playerPrefabs;
+    public GameObject[] enemyPrefabs; 
     public List<Player> playerTeam = new List<Player>();
     public List<Enemy> enemyTeam = new List<Enemy>();
 
-    // 플레이어와 적의 위치 Transform 배열
     public Transform[] playerTransforms;
     public Transform[] enemyTransforms;
 
@@ -20,7 +19,6 @@ public class TeamManager : MonoBehaviour
 
     public void InitializeTeams()
     {
-        // 적 소환
         for (int j = 0; j < enemyTransforms.Length; j++)
         {
             GameObject enemyObject = Instantiate(enemyPrefabs[j], 
@@ -29,7 +27,6 @@ public class TeamManager : MonoBehaviour
             enemyTeam.Add(enemy);
         }
 
-        // 플레이어 소환
         for (int i = 0; i < playerTransforms.Length; i++)
         {
             GameObject playerObject = Instantiate(playerPrefabs[i], 
