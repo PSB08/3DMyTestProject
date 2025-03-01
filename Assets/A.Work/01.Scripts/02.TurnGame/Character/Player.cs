@@ -15,6 +15,12 @@ public class Player : MonoBehaviour
         originalPosition = transform.position; // 시작할 때 원래 위치 저장
     }
 
+    private void Update()
+    {
+        if (Health <= 0)
+            Destroy(gameObject);
+    }
+
     public void Attack(Enemy target)
     {
         if (target != null && target.Health > 0)

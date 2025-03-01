@@ -361,6 +361,7 @@ MonoBehaviour:
   - {fileID: 1516486117}
   - {fileID: 465663383}
   - {fileID: 1615366386}
+  turnManager: {fileID: 305909095}
 --- !u!114 &305909097
 MonoBehaviour:
   m_ObjectHideFlags: 0

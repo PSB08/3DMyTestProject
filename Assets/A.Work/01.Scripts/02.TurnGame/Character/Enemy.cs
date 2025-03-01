@@ -24,6 +24,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Health <= 0)
+            Destroy(gameObject);
+    }
+
     public void AttackRandomPlayer()
     {
         if (playerTransforms.Length > 0)

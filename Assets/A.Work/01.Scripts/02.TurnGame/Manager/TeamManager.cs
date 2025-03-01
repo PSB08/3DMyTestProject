@@ -12,6 +12,8 @@ public class TeamManager : MonoBehaviour
     public Transform[] playerTransforms;
     public Transform[] enemyTransforms;
 
+    public TurnManager turnManager;
+
     private void Update()
     {
         CheckTeams();
@@ -42,7 +44,7 @@ public class TeamManager : MonoBehaviour
         {
             if (playerTeam[i].Health <= 0)
             {
-                Destroy(playerTeam[i].gameObject);
+                turnManager.turnOrder.Remove(playerTeam[i]);
                 playerTeam.RemoveAt(i);
             }
         }
@@ -51,7 +53,7 @@ public class TeamManager : MonoBehaviour
         {
             if (enemyTeam[i].Health <= 0)
             {
-                Destroy(enemyTeam[i].gameObject);
+                turnManager.turnOrder.Remove(enemyTeam[i]);
                 enemyTeam.RemoveAt(i);
             }
         }
