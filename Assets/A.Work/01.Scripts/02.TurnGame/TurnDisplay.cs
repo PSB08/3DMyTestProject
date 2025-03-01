@@ -6,27 +6,26 @@ using UnityEngine.UI;
 
 public class TurnDisplay : MonoBehaviour
 {
-    public Image currentTurnImage; // 현재 턴 캐릭터의 이미지
-    public TextMeshProUGUI currentTurnText; // 현재 턴 캐릭터의 이름
-    public TextMeshProUGUI turnListText; // 턴 리스트를 표시할 TextMeshPro UI 요소
+    public Image currentTurnImage;
+    public TextMeshProUGUI currentTurnText;
+    public TextMeshProUGUI turnListText;
 
     public void UpdateCurrentTurn(object currentCharacter)
     {
         if (currentCharacter is Player player)
         {
-            currentTurnText.text = player.CharacterName; // 캐릭터 이름 업데이트
+            currentTurnText.text = player.CharacterName;
         }
         else if (currentCharacter is Enemy enemy)
         {
-            currentTurnText.text = enemy.CharacterName; // 적 캐릭터 이름 업데이트
+            currentTurnText.text = enemy.CharacterName;
         }
     }
 
     public void UpdateTurnList(List<object> turnOrder, int currentTurnIndex)
     {
-        turnListText.text = ""; // 초기화
+        turnListText.text = "";
 
-        // 순서대로 캐릭터 이름을 추가
         for (int i = 0; i < turnOrder.Count; i++)
         {
             string characterName = turnOrder[i] is Player
@@ -35,11 +34,11 @@ public class TurnDisplay : MonoBehaviour
 
             if (i == currentTurnIndex)
             {
-                turnListText.text += $"{characterName}\n\n"; // 현재 턴 표시
+                turnListText.text += $"{characterName}\n\n";
             }
             else
             {
-                turnListText.text += $"{characterName}\n\n"; // 나머지 캐릭터 표시
+                turnListText.text += $"{characterName}\n\n";
             }
         }
     }
