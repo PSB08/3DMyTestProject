@@ -38,6 +38,7 @@ public class TurnManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         NextTurn(); // 적 공격 후 다음 턴으로 넘어가기
+        yield return new WaitForSeconds(1.5f);
     }
 
 }
