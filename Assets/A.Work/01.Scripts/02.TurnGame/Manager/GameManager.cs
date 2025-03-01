@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     {
         teamManager.InitializeTeams();
         turnManager.SetupTurnOrder(teamManager.playerTeam, teamManager.enemyTeam);
-        turnManager.NextTurn(); // 첫 턴을 시작합니다.
+        turnManager.NextTurn();
     }
 
     public void PlayerAttack(Enemy target)
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         if (currentCharacter is Player currentPlayer)
         {
             currentPlayer.Attack(target);
-            turnManager.NextTurn(); // 공격 후 턴 넘기기
+            turnManager.NextTurn();
         }
     }
 
@@ -29,9 +29,9 @@ public class GameManager : MonoBehaviour
     {
         var currentCharacter = turnManager.turnOrder[turnManager.currentTurnIndex];
 
-        if (currentCharacter is Player currentPlayer) // 현재 턴이 플레이어일 때
+        if (currentCharacter is Player currentPlayer)
         {
-            if (Input.GetMouseButtonDown(0)) // 마우스 왼쪽 버튼 클릭
+            if (Input.GetMouseButtonDown(0))
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
