@@ -3,16 +3,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public string CharacterName; // 캐릭터 이름
-    public int Health = 100;      // 기본 체력
-    public int AttackPower = 20;  // 기본 공격력
-    public float Speed;            // 속도
-    public float AttackMoveSpeed = 3f; // 공격 시 이동 속도
-    private Vector3 originalPosition; // 원래 위치 저장
+    public string CharacterName;
+    public int Health = 100;    
+    public int AttackPower = 20;
+    public float Speed;
+    public float AttackMoveSpeed = 3f;
+    private Vector3 originalPosition;
 
     private void Start()
     {
-        originalPosition = transform.position; // 시작할 때 원래 위치 저장
+        originalPosition = transform.position;
     }
 
     private void Update()
@@ -25,14 +25,12 @@ public class Player : MonoBehaviour
     {
         if (target != null && target.Health > 0)
         {
-            // 공격할 위치로 이동
             MoveTo(target.transform.position, () =>
             {
-                target.Health -= AttackPower; // 공격력만큼 체력 감소
+                target.Health -= AttackPower;
                 Debug.Log($"{CharacterName}가 {target.CharacterName}를 공격했습니다! (남은 체력: {target.Health})");
-                // 원래 위치로 돌아가기
                 MoveTo(originalPosition, null);
-            }, AttackMoveSpeed); // 공격 시 속도 사용
+            }, AttackMoveSpeed);
         }
     }
 
@@ -54,8 +52,8 @@ public class Player : MonoBehaviour
             yield return null;
         }
 
-        transform.position = targetPosition; // 정확한 위치 설정
-        onComplete?.Invoke(); // 이동 완료 후 콜백 호출
+        transform.position = targetPosition;
+        onComplete?.Invoke();
     }
 
 }
