@@ -28,6 +28,6 @@ public class PlayerHealthText : MonoBehaviour
     {
         // 적의 위치 위쪽으로 텍스트를 위치시킵니다.
         Vector3 screenPosition = Camera.main.WorldToScreenPoint(player.transform.position);
-        rectTransform.position = new Vector3(screenPosition.x + 50, screenPosition.y + 100, screenPosition.z); // 50은 텍스트를 적의 위쪽으로 이동시키는 오프셋입니다.
+        rectTransform.position = new Vector3(screenPosition.x + 50, screenPosition.y + 130, screenPosition.z);
     }
 }
