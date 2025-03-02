@@ -9,9 +9,11 @@ public class Player : MonoBehaviour
     public float Speed;
     public float AttackMoveSpeed = 3f;
     private Vector3 originalPosition;
+    public PlayerHealthText healthText;
 
     private void Start()
     {
+        healthText.player = this;
         originalPosition = transform.position;
     }
 

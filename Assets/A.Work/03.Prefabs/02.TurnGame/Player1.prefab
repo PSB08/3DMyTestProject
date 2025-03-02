@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8140622222155559293}
   - component: {fileID: 6515527681827807190}
   - component: {fileID: -1669051930047781305}
+  - component: {fileID: -5979762195041390774}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -123,3 +124,15 @@ MonoBehaviour:
   AttackPower: 20
   Speed: 134
   AttackMoveSpeed: 3
+--- !u!114 &-5979762195041390774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5081182562940651445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd65a01b45f7c4f43884252160b0daab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
