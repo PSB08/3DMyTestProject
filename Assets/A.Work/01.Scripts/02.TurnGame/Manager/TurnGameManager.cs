@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class TurnGameManager : MonoBehaviour
 {
     public TeamManager teamManager;
     public TurnManager turnManager;
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         if (currentCharacter is Player currentPlayer)
         {
             currentPlayer.Attack(target);
-            turnManager.NextTurn();
+            StartCoroutine(WaitTime());
         }
     }
 
@@ -46,6 +46,12 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    private IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(1f);
+        turnManager.NextTurn();
     }
 
 }

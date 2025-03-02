@@ -42,7 +42,7 @@ public class TurnManager : MonoBehaviour
 
     private IEnumerator WaitTime()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         NextTurn();
     }
 

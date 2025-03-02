@@ -10,9 +10,11 @@ public class Enemy : MonoBehaviour
     public float AttackMoveSpeed = 3f;
     public Transform[] playerTransforms;
     private Vector3 originalPosition;
+    public EnemyHealthText healthText;
 
     private void Start()
     {
+        healthText.enemy = this;
         originalPosition = transform.position;
         GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
         playerTransforms = new Transform[playerObjects.Length];

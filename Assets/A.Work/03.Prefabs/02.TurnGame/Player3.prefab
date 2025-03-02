@@ -121,4 +121,5 @@ MonoBehaviour:
   CharacterName: Player3
   Health: 120
   AttackPower: 20
-  Speed: 110
+  Speed: 161
+  AttackMoveSpeed: 3
