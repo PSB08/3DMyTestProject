@@ -8,9 +8,10 @@ public class Enemy : MonoBehaviour
     public int AttackPower = 15;
     public float Speed;
     public float AttackMoveSpeed = 3f;
+    public EnemyHealthText healthText;
+    public Material nameMat;
     public Transform[] playerTransforms;
     private Vector3 originalPosition;
-    public EnemyHealthText healthText;
 
     private void Start()
     {

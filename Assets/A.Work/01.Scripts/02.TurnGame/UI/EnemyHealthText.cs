@@ -19,6 +19,7 @@ public class EnemyHealthText : MonoBehaviour
     {
         if (enemy != null)
         {
+            healthText.color = enemy.nameMat.color;
             healthText.text = $"{enemy.Health}";
             UpdatePosition();
         }

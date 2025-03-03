@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class TurnDisplay : MonoBehaviour
 {
+    public Enemy enemy;
     public Image currentTurnImage;
     public TextMeshProUGUI currentTurnText;
     public TextMeshProUGUI turnListText;
@@ -14,10 +15,12 @@ public class TurnDisplay : MonoBehaviour
     {
         if (currentCharacter is Player player)
         {
+            currentTurnText.color = Color.black;
             currentTurnText.text = player.CharacterName;
         }
         else if (currentCharacter is Enemy enemy)
         {
+            currentTurnText.color = enemy.nameMat.color;
             currentTurnText.text = enemy.CharacterName;
         }
     }
@@ -30,7 +33,7 @@ public class TurnDisplay : MonoBehaviour
         {
             string characterName = turnOrder[i] is Player
                 ? (turnOrder[i] as Player).CharacterName
-                : (turnOrder[i] as Enemy).CharacterName;
+                : (turnOrder[i] as Enemy).CharacterName;  
 
             if (i == currentTurnIndex)
             {
@@ -40,6 +43,7 @@ public class TurnDisplay : MonoBehaviour
             {
                 turnListText.text += $"{characterName}\n\n";
             }
+            
         }
     }
 
