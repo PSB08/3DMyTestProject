@@ -121,8 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterName: Player4
-  Health: 120
-  AttackPower: 20
+  Health: 150
+  AttackPower: 25
   Speed: 93
   AttackMoveSpeed: 3
   healthText: {fileID: 3780812960707739348}

@@ -121,8 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterName: Enemy2
-  Health: 100
-  AttackPower: 10
+  Health: 120
+  AttackPower: 15
   Speed: 90
   AttackMoveSpeed: 3
   playerTransforms: []

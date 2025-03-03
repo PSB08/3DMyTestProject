@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6046e800730994c45af2ddad7f5f4b2e, type: 2}
+  - {fileID: 2100000, guid: 13c7c9bb95fc94c41b2c06a8330f7e1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterName: Player3
-  Health: 120
+  Health: 130
   AttackPower: 20
   Speed: 161
   AttackMoveSpeed: 3

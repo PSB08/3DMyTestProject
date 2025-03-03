@@ -23,7 +23,8 @@ public class TeamManager : MonoBehaviour
     {
         for (int j = 0; j < enemyTransforms.Length; j++)
         {
-            GameObject enemyObject = Instantiate(enemyPrefabs[j], 
+            int randomEnemy = Random.Range(0, enemyTransforms.Length);
+            GameObject enemyObject = Instantiate(enemyPrefabs[randomEnemy],
                 enemyTransforms[j].position, enemyTransforms[j].rotation);
             Enemy enemy = enemyObject.GetComponent<Enemy>();
             enemyTeam.Add(enemy);

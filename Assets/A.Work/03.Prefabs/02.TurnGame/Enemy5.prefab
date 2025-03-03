@@ -199,7 +199,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ad602d3f6be2554b8fb7f6c085ac9af, type: 2}
+  - {fileID: 2100000, guid: 6046e800730994c45af2ddad7f5f4b2e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterName: Enemy5
   Health: 100
-  AttackPower: 10
+  AttackPower: 15
   Speed: 98
   AttackMoveSpeed: 3
   playerTransforms: []
