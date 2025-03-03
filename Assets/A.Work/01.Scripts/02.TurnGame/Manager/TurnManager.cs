@@ -18,7 +18,7 @@ public class TurnManager : MonoBehaviour
         turnOrder = turnOrder.OrderByDescending(c => (c is Player player) ? player.Speed : (c as Enemy).Speed).ToList();
     }
 
-    public void NextTurn()
+    public IEnumerator NextTime()
     {
         currentTurnIndex++;
 
@@ -31,19 +31,16 @@ public class TurnManager : MonoBehaviour
         turnDisplay.UpdateCurrentTurn(currentCharacter);
         turnDisplay.UpdateTurnList(turnOrder, currentTurnIndex);
 
+        yield return new WaitForSeconds(0.5f);
+
         Debug.Log($"{(currentCharacter is Player ? (currentCharacter as Player).CharacterName : (currentCharacter as Enemy).CharacterName)}의 턴입니다.");
 
         if (currentCharacter is Enemy enemy)
         {
             enemy.AttackRandomPlayer();
-            StartCoroutine(WaitTime());
+            yield return new WaitForSeconds(1f);
+            StartCoroutine(NextTime());
         }
-    }
-
-    private IEnumerator WaitTime()
-    {
-        yield return new WaitForSeconds(1f);
-        NextTurn();
     }
 
 }

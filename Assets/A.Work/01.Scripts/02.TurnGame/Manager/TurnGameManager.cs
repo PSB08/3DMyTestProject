@@ -11,7 +11,7 @@ public class TurnGameManager : MonoBehaviour
     {
         teamManager.InitializeTeams();
         turnManager.SetupTurnOrder(teamManager.playerTeam, teamManager.enemyTeam);
-        turnManager.NextTurn();
+        StartCoroutine(turnManager.NextTime());
     }
 
     public void PlayerAttack(Enemy target)
@@ -51,7 +51,7 @@ public class TurnGameManager : MonoBehaviour
     private IEnumerator WaitTime()
     {
         yield return new WaitForSeconds(1f);
-        turnManager.NextTurn();
+        StartCoroutine(turnManager.NextTime());
     }
 
 }
