@@ -14,6 +14,7 @@ public class TurnGameManager : MonoBehaviour
         StartCoroutine(turnManager.NextTime());
     }
 
+
     public void PlayerAttack(Enemy target)
     {
         var currentCharacter = turnManager.turnOrder[turnManager.currentTurnIndex];

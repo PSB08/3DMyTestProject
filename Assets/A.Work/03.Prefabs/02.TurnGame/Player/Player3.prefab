@@ -34,8 +34,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4323145210290696941}
   - {fileID: 6540741119741698438}
-  - {fileID: 4736669714699707025}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1752048272394017193
@@ -127,6 +127,7 @@ MonoBehaviour:
   Speed: 161
   AttackMoveSpeed: 3
   healthText: {fileID: 7906726832561553099}
+  playerCamera: {fileID: 3806447812374509735}
 --- !u!114 &7906726832561553099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 7787057918883496748}
   healthText: {fileID: 3533516377188019110}
---- !u!1 &5554806653492963735
+--- !u!1 &2931541676802493527
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,22 +150,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4736669714699707025}
-  - component: {fileID: 860610473303056466}
+  - component: {fileID: 4323145210290696941}
+  - component: {fileID: 3806447812374509735}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: p3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4736669714699707025
+--- !u!4 &4323145210290696941
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5554806653492963735}
+  m_GameObject: {fileID: 2931541676802493527}
   serializedVersion: 2
   m_LocalRotation: {x: 0.027090631, y: -0.13025007, z: -0.005232198, w: 0.9910972}
   m_LocalPosition: {x: 2, y: 1, z: -3}
@@ -173,13 +174,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5968121812916963527}
   m_LocalEulerAnglesHint: {x: 3, y: -15, z: -1}
---- !u!20 &860610473303056466
+--- !u!20 &3806447812374509735
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5554806653492963735}
+  m_GameObject: {fileID: 2931541676802493527}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1

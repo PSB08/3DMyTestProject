@@ -10,10 +10,12 @@ public class Player : MonoBehaviour
     public float AttackMoveSpeed = 3f;
     private Vector3 originalPosition;
     public PlayerHealthText healthText;
+    public Camera playerCamera;
 
     private void Start()
     {
         healthText.player = this;
+        playerCamera.enabled = false;
         originalPosition = transform.position;
     }
 
@@ -56,6 +58,20 @@ public class Player : MonoBehaviour
 
         transform.position = targetPosition;
         onComplete?.Invoke();
+    }
+
+    public void CameraOn()
+    {
+        Camera.main.gameObject.SetActive(false);
+        playerCamera.enabled = true;
+        playerCamera.tag = "MainCamera";
+        playerCamera = Camera.main;
+    }
+    public void CameraOff()
+    {
+        Camera.main.gameObject.SetActive(true);
+        playerCamera.enabled = false;
+        playerCamera.tag = "Untagged";
     }
 
 }

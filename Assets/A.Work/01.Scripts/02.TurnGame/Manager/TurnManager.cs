@@ -38,8 +38,13 @@ public class TurnManager : MonoBehaviour
         if (currentCharacter is Enemy enemy)
         {
             enemy.AttackRandomPlayer();
+            enemy.CameraOn();
             yield return new WaitForSeconds(1f);
             StartCoroutine(NextTime());
+        }
+        if (currentCharacter is Player player)
+        {
+            player.CameraOn();
         }
     }
 

@@ -72,4 +72,9 @@ public class Enemy : MonoBehaviour
         onComplete?.Invoke();
     }
 
+    public void CameraOn()
+    {
+        Camera.main.gameObject.SetActive(true);
+    }
+
 }
