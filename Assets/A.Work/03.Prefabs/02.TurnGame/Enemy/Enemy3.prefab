@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterName: Physics
-  Health: 100
+  Health: 1
   AttackPower: 10
   Speed: 120
   AttackMoveSpeed: 3

@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterName: Fire
-  Health: 120
+  Health: 1
   AttackPower: 15
   Speed: 90
   AttackMoveSpeed: 3

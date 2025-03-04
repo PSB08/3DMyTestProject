@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterName: Wind
-  Health: 100
+  Health: 1
   AttackPower: 15
   Speed: 98
   AttackMoveSpeed: 3

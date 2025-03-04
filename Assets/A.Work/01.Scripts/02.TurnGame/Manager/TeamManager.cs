@@ -17,6 +17,7 @@ public class TeamManager : MonoBehaviour
     private void Update()
     {
         CheckTeams();
+        CheckTeamVictory();
     }
 
     public void InitializeTeams()
@@ -59,4 +60,18 @@ public class TeamManager : MonoBehaviour
             }
         }
     }
+
+    private void CheckTeamVictory()
+    {
+        if (playerTeam.Count <= 0)
+        {
+            Debug.Log("Enemy Win");
+        }
+        if (enemyTeam.Count <= 0)
+        {
+            Debug.Log("Player Win");
+        }
+    }
+
+
 }
