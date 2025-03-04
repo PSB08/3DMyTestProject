@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealthText : MonoBehaviour
 {
@@ -20,14 +21,7 @@ public class PlayerHealthText : MonoBehaviour
         if (player != null)
         {
             healthText.text = $"{player.Health}";
-            UpdatePosition();
         }
     }
 
-    private void UpdatePosition()
-    {
-        // 적의 위치 위쪽으로 텍스트를 위치시킵니다.
-        Vector3 screenPosition = Camera.main.WorldToScreenPoint(player.transform.position);
-        rectTransform.position = new Vector3(screenPosition.x + 50, screenPosition.y + 250, screenPosition.z);
-    }
 }

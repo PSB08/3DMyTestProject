@@ -301,7 +301,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c8d0755c8bd11e649a9a9d315436cc80, type: 2}
+  - {fileID: 2100000, guid: 0ad602d3f6be2554b8fb7f6c085ac9af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -362,9 +362,9 @@ MonoBehaviour:
   Speed: 120
   AttackMoveSpeed: 3
   healthText: {fileID: 4322091286340262168}
-  nameMat: {fileID: 2100000, guid: c8d0755c8bd11e649a9a9d315436cc80, type: 2}
+  nameMat: {fileID: 2100000, guid: 0ad602d3f6be2554b8fb7f6c085ac9af, type: 2}
   playerTransforms: []
-  camChange: {fileID: 4987286817567552584, guid: d4cd479eb65f2b748ab64178f1cc0372, type: 3}
+  camChange: {fileID: 0}
 --- !u!114 &4322091286340262168
 MonoBehaviour:
   m_ObjectHideFlags: 0
