@@ -10,11 +10,12 @@ TagManager:
   - Wall
   - Weapon
   - Bullet
+  - Manager
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Camera
   - Water
   - UI
   - 

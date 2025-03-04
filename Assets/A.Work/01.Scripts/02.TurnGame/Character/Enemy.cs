@@ -12,11 +12,13 @@ public class Enemy : MonoBehaviour
     public Material nameMat;
     public Transform[] playerTransforms;
     private Vector3 originalPosition;
+    public CamChange camChange;
 
     private void Start()
     {
         healthText.enemy = this;
         originalPosition = transform.position;
+        camChange = GameObject.FindGameObjectWithTag("Manager").GetComponent<CamChange>();
         GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
         playerTransforms = new Transform[playerObjects.Length];
 
@@ -40,6 +42,7 @@ public class Enemy : MonoBehaviour
             Player target = playerTransforms[randomIndex].GetComponent<Player>();
             if (target != null && target.Health > 0)
             {
+                camChange.MainCamSet();
                 MoveTo(target.transform.position, () =>
                 {
                     target.Health -= AttackPower;
@@ -70,11 +73,6 @@ public class Enemy : MonoBehaviour
 
         transform.position = targetPosition;
         onComplete?.Invoke();
-    }
-
-    public void CameraOn()
-    {
-        Camera.main.gameObject.SetActive(true);
     }
 
 }

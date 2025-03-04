@@ -364,6 +364,7 @@ MonoBehaviour:
   healthText: {fileID: 4322091286340262168}
   nameMat: {fileID: 2100000, guid: c8d0755c8bd11e649a9a9d315436cc80, type: 2}
   playerTransforms: []
+  camChange: {fileID: 4987286817567552584, guid: d4cd479eb65f2b748ab64178f1cc0372, type: 3}
 --- !u!114 &4322091286340262168
 MonoBehaviour:
   m_ObjectHideFlags: 0
