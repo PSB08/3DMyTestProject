@@ -195,10 +195,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fa334285ef842429519defdc3fb046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterName: Tribbie
-  Health: 100
+  CharacterName: "\uD2B8\uB9AC\uBE44"
+  Health: 150
   AttackPower: 10
-  Speed: 111
+  Speed: 93
   AttackMoveSpeed: 3
   healthText: {fileID: -3827036335027679797}
 --- !u!114 &-3827036335027679797
