@@ -45,19 +45,19 @@ public class TurnManager : MonoBehaviour
         if (currentCharacter is Player player)
         {
             camChange.mainCam.gameObject.SetActive(false);
-            if (player.CharacterName.Contains("더"))
+            if (player.CharacterName.Contains("The Herta"))
             {
                 camChange.CameraSetting(1);
             }
-            if (player.CharacterName.Contains("트"))
+            if (player.CharacterName.Contains("Tribbie"))
             {
                 camChange.CameraSetting(2);
             }
-            if (player.CharacterName.Contains("제"))
+            if (player.CharacterName.Contains("Jade"))
             {
                 camChange.CameraSetting(3);
             }
-            if (player.CharacterName.Contains("어"))
+            if (player.CharacterName.Contains("Aventurine"))
             {
                 camChange.CameraSetting(4);
             }

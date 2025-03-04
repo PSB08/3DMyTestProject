@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fa334285ef842429519defdc3fb046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterName: "\uD2B8\uB9AC\uBE44"
+  CharacterName: Tribbie
   Health: 150
   AttackPower: 10
   Speed: 93
