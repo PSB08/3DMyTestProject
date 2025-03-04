@@ -40,9 +40,9 @@ public class Enemy : MonoBehaviour
         {
             int randomIndex = Random.Range(0, playerTransforms.Length);
             Player target = playerTransforms[randomIndex].GetComponent<Player>();
+            camChange.CameraSetting(randomIndex + 1);
             if (target != null && target.Health > 0)
             {
-                camChange.MainCamSet();
                 MoveTo(target.transform.position, () =>
                 {
                     target.Health -= AttackPower;

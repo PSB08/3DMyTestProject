@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 287a9e37d20be224ab75b7c66fa35c2d, type: 2}
+  - {fileID: 2100000, guid: 60a0c26ec30395c4a9b05e9901d77946, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -120,13 +120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fa334285ef842429519defdc3fb046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterName: Player2
+  CharacterName: Tribbie
   Health: 100
   AttackPower: 10
   Speed: 111
   AttackMoveSpeed: 3
   healthText: {fileID: -3827036335027679797}
-  playerCamera: {fileID: 0}
 --- !u!114 &-3827036335027679797
 MonoBehaviour:
   m_ObjectHideFlags: 0
