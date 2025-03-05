@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fa334285ef842429519defdc3fb046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterName: The Herta
+  CharacterName: Player1
   Health: 100
   AttackPower: 25
   Speed: 161
