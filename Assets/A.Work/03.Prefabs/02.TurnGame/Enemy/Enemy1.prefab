@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterName: Quantum
-  Health: 1
+  Health: 150
   AttackPower: 10
   Speed: 100
   AttackMoveSpeed: 3

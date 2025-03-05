@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterName: Ice
-  Health: 1
+  Health: 120
   AttackPower: 20
   Speed: 150
   AttackMoveSpeed: 3
