@@ -51,6 +51,7 @@ public class TurnGameManager : MonoBehaviour
 
     private IEnumerator WaitTime()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         yield return new WaitForSeconds(1f);
         StartCoroutine(turnManager.NextTime());
     }

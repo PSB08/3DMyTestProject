@@ -38,12 +38,14 @@ public class TurnManager : MonoBehaviour
 
         if (currentCharacter is Enemy enemy)
         {
+            Cursor.lockState = CursorLockMode.Locked;
             enemy.AttackRandomPlayer();
             yield return new WaitForSeconds(1f);
             StartCoroutine(NextTime());
         }
         if (currentCharacter is Player player)
         {
+            Cursor.lockState = CursorLockMode.None;
             camChange.mainCam.gameObject.SetActive(false);
             if (player.CharacterName.Contains("1"))
             {
@@ -61,7 +63,6 @@ public class TurnManager : MonoBehaviour
             {
                 camChange.CameraSetting(4);
             }
-
         }
     }
 

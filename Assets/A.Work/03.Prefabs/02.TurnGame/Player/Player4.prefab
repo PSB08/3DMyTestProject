@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterName: Player4
-  Health: 120
+  Health: 130
   AttackPower: 15
   Speed: 111
   AttackMoveSpeed: 3

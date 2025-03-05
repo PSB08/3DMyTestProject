@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -39,17 +40,25 @@ public class Enemy : MonoBehaviour
         if (playerTransforms.Length > 0)
         {
             int randomIndex = Random.Range(0, playerTransforms.Length);
-            Player target = playerTransforms[randomIndex].GetComponent<Player>();
-            camChange.CameraSetting(randomIndex + 1);
-            if (target != null && target.Health > 0)
+            if (playerTransforms[randomIndex] != null)
             {
-                MoveTo(target.transform.position, () =>
+                Player target = playerTransforms[randomIndex].GetComponent<Player>();
+                if (playerTransforms[randomIndex] != null)
                 {
-                    target.Health -= AttackPower;
-                    Debug.Log($"{CharacterName}가 {target.CharacterName}를 공격했습니다! (남은 체력: {target.Health})");
-                    MoveTo(originalPosition, null);
-                }, AttackMoveSpeed);
+                    if (target != null && target.Health > 0)
+                    {
+                        MoveTo(target.transform.position, () =>
+                        {
+                            target.Health -= AttackPower;
+                            Debug.Log($"{CharacterName}가 {target.CharacterName}를 공격했습니다! (남은 체력: {target.Health})");
+                            MoveTo(originalPosition, null);
+                        }, AttackMoveSpeed);
+                    }
+                    camChange.CameraSetting(randomIndex + 1);
+                }
             }
+            
+            
         }
     }
 

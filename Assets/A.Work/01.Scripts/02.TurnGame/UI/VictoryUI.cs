@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VictoryUI : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class VictoryUI : MonoBehaviour
     {
         victoryTxt.enabled = true;
         yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(0);
         victoryTxt.enabled = false;
     }
 

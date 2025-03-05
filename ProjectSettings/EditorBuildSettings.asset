@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/A.Work/00.Scene/01.AI.unity
     guid: 3c9647dfd7ab93d46825ec89690355f5
+  - enabled: 1
+    path: Assets/A.Work/00.Scene/02.TurnGame.unity
+    guid: 95cdf629ecd367747a61b4adea21b0b6
   m_configObjects: {}
