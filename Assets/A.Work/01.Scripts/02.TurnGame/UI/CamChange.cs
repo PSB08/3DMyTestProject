@@ -47,13 +47,5 @@ public class CamChange : MonoBehaviour
         }
     }
 
-    public void MainCamSet()
-    {
-        mainCam.enabled = true;
-        cams[0].enabled = false;
-        cams[1].enabled = false;
-        cams[2].enabled = false;
-        cams[3].enabled = false;
-    }
-
+    
 }
