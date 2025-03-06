@@ -5,19 +5,23 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    public Transform player; // 플레이어 위치
+    public Transform player;
     public EnemySpawner spawner;
-    private NavMeshAgent agent; // NavMeshAgent
+    private NavMeshAgent agent;
     private MeshRenderer mesh;
     private Color startColor;
 
-    private void Start()
+    private void Awake()
     {
         mesh = gameObject.GetComponent<MeshRenderer>();
-        agent = GetComponent<NavMeshAgent>(); // NavMeshAgent 가져오기
+        agent = GetComponent<NavMeshAgent>();
         spawner = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawner>();
-        GameObject playerObj = GameObject.FindWithTag("MainCamera");
         startColor = mesh.material.color;
+    }
+
+    private void Start()
+    {
+        GameObject playerObj = GameObject.FindWithTag("MainCamera");
         if (playerObj != null)
         {
             player = playerObj.transform;
@@ -28,7 +32,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (player != null)
         {
-            agent.SetDestination(player.position); // 플레이어를 따라감
+            agent.SetDestination(player.position);
         }
 
     }

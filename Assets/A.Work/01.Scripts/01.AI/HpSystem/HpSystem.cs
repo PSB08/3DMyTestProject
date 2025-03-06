@@ -20,11 +20,11 @@ public class HpSystem : MonoBehaviour
     // 데미지를 받는 메서드
     public void TakeDamage(float amount)
     {
-        if (currentHealth <= 0) return; // 이미 죽었으면 실행 X
+        if (currentHealth <= 0) return;
 
         currentHealth -= amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // 체력 0~최대값 유지
-        OnHealthChanged?.Invoke(currentHealth, maxHealth); // 체력 변경 이벤트 실행
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
 
         if (currentHealth <= 0)
         {
@@ -32,17 +32,15 @@ public class HpSystem : MonoBehaviour
         }
     }
 
-    // 체력을 회복하는 메서드
     public void Heal(float amount)
     {
-        if (currentHealth <= 0) return; // 죽은 상태에서는 회복 불가
+        if (currentHealth <= 0) return;
 
         currentHealth += amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
-    // 사망 처리 메서드
     private void Die()
     {
         if (gameObject.name.Contains("Player"))
@@ -53,10 +51,9 @@ public class HpSystem : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        OnDeath?.Invoke(); // 사망 이벤트 실행
+        OnDeath?.Invoke();
     }
 
-    // 현재 체력 반환
     public float GetHealth()
     {
         return currentHealth;
