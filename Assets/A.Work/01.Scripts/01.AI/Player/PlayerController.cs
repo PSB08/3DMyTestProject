@@ -13,19 +13,30 @@ public class PlayerController : MonoBehaviour
     private Vector3 velocity;
     private float gravity = -9.81f;
     public bool isResetting = false;
+    private bool isStopTime = false;
 
-    void Start()
+    private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         controller = GetComponent<CharacterController>();
     }
 
-    void Update()
+    private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            if (isStopTime)
+                Time.timeScale = 1;
+            else
+                Time.timeScale = 0;
+            isStopTime = !isStopTime;
+        }
+        
+
         if (isResetting) return;
 
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.unscaledDeltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.unscaledDeltaTime;
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
@@ -38,7 +49,7 @@ public class PlayerController : MonoBehaviour
         float moveZ = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
-        controller.Move(move * moveSpeed * Time.deltaTime);
+        controller.Move(move * moveSpeed * Time.unscaledDeltaTime);
 
         if (controller.isGrounded && velocity.y < 0)
         {
@@ -50,8 +61,8 @@ public class PlayerController : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
-        velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+        velocity.y += gravity * Time.unscaledDeltaTime;
+        controller.Move(velocity * Time.unscaledDeltaTime);
     }
 
 
