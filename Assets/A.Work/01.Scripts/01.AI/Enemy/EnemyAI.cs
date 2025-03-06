@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     public Transform player; // 플레이어 위치
+    public EnemySpawner spawner;
     private NavMeshAgent agent; // NavMeshAgent
     private MeshRenderer mesh;
     private Color startColor;
@@ -14,6 +15,7 @@ public class EnemyAI : MonoBehaviour
     {
         mesh = gameObject.GetComponent<MeshRenderer>();
         agent = GetComponent<NavMeshAgent>(); // NavMeshAgent 가져오기
+        spawner = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawner>();
         GameObject playerObj = GameObject.FindWithTag("MainCamera");
         startColor = mesh.material.color;
         if (playerObj != null)
@@ -53,6 +55,11 @@ public class EnemyAI : MonoBehaviour
         mesh.material.color = Color.red;
         yield return new WaitForSeconds(0.2f);
         mesh.material.color = startColor;
+    }
+
+    public void SpawnCountMinus()
+    {
+        spawner.currentSpawned--;
     }
 
 }
