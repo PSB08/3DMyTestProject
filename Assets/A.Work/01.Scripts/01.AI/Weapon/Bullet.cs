@@ -9,8 +9,8 @@ public class Bullet : MonoBehaviour
 
     private void Start()
     {
-        GetComponent<Rigidbody>().velocity = transform.forward * speed;
-        Destroy(gameObject, lifeTime); // ÀÏÁ¤ ½Ã°£ ÈÄ ÃÑ¾Ë Á¦°Å
+        GetComponent<Rigidbody>().linearVelocity = transform.forward * speed;
+        Destroy(gameObject, lifeTime); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ ï¿½Ñ¾ï¿½ ï¿½ï¿½ï¿½ï¿½
     }
 
     
