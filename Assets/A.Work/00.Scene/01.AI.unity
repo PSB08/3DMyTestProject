@@ -2372,7 +2372,7 @@ GameObject:
   - component: {fileID: 1356347683}
   - component: {fileID: 1356347682}
   - component: {fileID: 1356347686}
-  - component: {fileID: 1356347685}
+  - component: {fileID: 1356347688}
   - component: {fileID: 1356347687}
   m_Layer: 0
   m_Name: Main Camera
@@ -2458,22 +2458,6 @@ Transform:
   - {fileID: 1772358478}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
---- !u!114 &1356347685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356347681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f72c765b7a2b3f4fabfedf6bd327070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  mouseSensitivity: 100
-  jumpHeight: 2
-  isResetting: 0
 --- !u!143 &1356347686
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2516,6 +2500,22 @@ MonoBehaviour:
   - {fileID: 1356347683}
   - {fileID: 309438145}
   - {fileID: 555765752}
+--- !u!114 &1356347688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356347681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f72c765b7a2b3f4fabfedf6bd327070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  mouseSensitivity: 100
+  jumpHeight: 2
+  isResetting: 0
 --- !u!1 &1372004188
 GameObject:
   m_ObjectHideFlags: 0
@@ -3198,7 +3198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a974ee3a5976043ba078944ca7fe03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 1356347685}
+  playerController: {fileID: 1356347688}
   hpSystem: {fileID: 2008487842}
 --- !u!114 &2008487842
 MonoBehaviour:
