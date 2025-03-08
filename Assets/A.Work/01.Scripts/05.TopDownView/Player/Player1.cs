@@ -21,6 +21,7 @@ namespace TopDownView.Player
             playerInput.OnMovementChange += HandleMovementChange;
             playerInput.OnJumpPressed += HandleJumpPressed;
             playerInput.OnRunPressed += HandleRunPressed;
+            playerInput.OnAttackPressed += HandleAttackPressed;
         }
 
         private void OnDestroy()
@@ -28,6 +29,7 @@ namespace TopDownView.Player
             playerInput.OnMovementChange -= HandleMovementChange;
             playerInput.OnJumpPressed -= HandleJumpPressed;
             playerInput.OnRunPressed -= HandleRunPressed;
+            playerInput.OnAttackPressed -= HandleAttackPressed;
         }
 
         private void HandleMovementChange(Vector2 movementnput)
@@ -55,6 +57,10 @@ namespace TopDownView.Player
             }
         }
 
+        private void HandleAttackPressed()
+        {
+            Debug.Log("Attack!");
+        }
 
 
     }
