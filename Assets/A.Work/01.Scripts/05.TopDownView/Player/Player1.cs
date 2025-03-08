@@ -8,8 +8,13 @@ namespace TopDownView.Player
     {
         [SerializeField] private CharacterMovement1 movement;
         [SerializeField] private PlayerInputSO playerInput;
-        //[SerializeField] private TextMeshProUGUI sprintTxt;
+        [SerializeField] private TextMeshProUGUI sprintTxt;
         private bool isSprinted = false;
+
+        private void Start()
+        {
+            sprintTxt.text = "Walk";
+        }
 
         private void Awake()
         {
@@ -41,12 +46,12 @@ namespace TopDownView.Player
             if (isSprinted)
             {
                 movement.SetSprint(true);
-                //sprintTxt.text = "Running";
+                sprintTxt.text = "Running";
             }
             else
             {
                 movement.SetSprint(false);
-                //sprintTxt.text = "Walk";
+                sprintTxt.text = "Walk";
             }
         }
 

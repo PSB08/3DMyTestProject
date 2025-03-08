@@ -54,7 +54,6 @@ namespace TopDownView.Player
                 float rotationSpeed = 8f;
                 parent.rotation = Quaternion.Lerp(parent.rotation, targetRot, Time.fixedDeltaTime * rotationSpeed);
             }
-
         }
 
         private void ApplyGravity()
