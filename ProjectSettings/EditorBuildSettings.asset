@@ -14,4 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/A.Work/00.Scene/02.TurnGame.unity
     guid: 95cdf629ecd367747a61b4adea21b0b6
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 4abcd61cd1204a54fb553f7f259b6c49, type: 3}
+  m_UseUCBPForAssetBundles: 0
