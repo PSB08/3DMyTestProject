@@ -715,7 +715,7 @@ MonoBehaviour:
   moveSpeed: 8
   sprintSpeed: 3
   gravity: -9.8
-  jumpHeight: 0.5
+  jumpHeight: 1
   controller: {fileID: 725612362}
   parent: {fileID: 725612363}
 --- !u!1 &576768564
