@@ -52,7 +52,7 @@ namespace TopDownView.SecondPlayer
 
         private void HandleAttackPressed()
         {
-
+            Debug.Log("Blue Player Attack");
         }
 
 

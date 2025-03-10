@@ -59,7 +59,7 @@ namespace TopDownView.Player
 
         private void HandleAttackPressed()
         {
-            
+            Debug.Log("Red Player Attack");
         }
 
 
