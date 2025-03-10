@@ -33,6 +33,7 @@ namespace TopDownView.Player
         {
             if (IsGrounded)
                 _verticalVelocity = Mathf.Sqrt(jumpHeight * -1f * gravity);
+            Debug.Log($"{Mathf.Sqrt(jumpHeight * -0.5f * gravity)}");
         }
 
         private void FixedUpdate()
