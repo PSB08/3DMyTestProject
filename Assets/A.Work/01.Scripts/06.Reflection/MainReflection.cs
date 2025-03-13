@@ -6,7 +6,7 @@ namespace GetType
 {
     public class MainReflection : MonoBehaviour
     {
-
+        
 
     }
 }

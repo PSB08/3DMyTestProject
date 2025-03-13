@@ -9,6 +9,8 @@
     <file url="file://$PROJECT_DIR$/Assets/A.Work/01.Scripts/01.AI/Weapon/SwordAttack.cs" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/Assets/A.Work/01.Scripts/02.TurnGame/Character/Enemy.cs" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/Assets/A.Work/01.Scripts/02.TurnGame/Character/Player.cs" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/Assets/A.Work/01.Scripts/02.TurnGame/Manager/TurnManager.cs" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/Assets/A.Work/01.Scripts/02.TurnGame/UI/EnemyHealthText.cs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Assets/A.Work/01.Scripts/05.TopDownView/Test/MeshTest.cs" charset="UTF-8" />
   </component>
 </project>

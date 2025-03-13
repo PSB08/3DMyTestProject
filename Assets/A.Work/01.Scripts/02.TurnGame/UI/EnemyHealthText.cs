@@ -27,7 +27,6 @@ public class EnemyHealthText : MonoBehaviour
 
     private void UpdatePosition()
     {
-        // 적의 위치 위쪽으로 텍스트를 위치시킵니다.
         Vector3 screenPosition = Camera.main.WorldToScreenPoint(enemy.transform.position);
         rectTransform.position = new Vector3(screenPosition.x + 50, screenPosition.y + 100, screenPosition.z);
     }
