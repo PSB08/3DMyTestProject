@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         GetComponent<Rigidbody>().linearVelocity = transform.forward * speed;
-        Destroy(gameObject, lifeTime); // ���� �ð� �� �Ѿ� ����
+        Destroy(gameObject, lifeTime);
     }
 
     
