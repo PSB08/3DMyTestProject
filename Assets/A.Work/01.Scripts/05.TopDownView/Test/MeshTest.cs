@@ -12,7 +12,7 @@ namespace TopDownView.Test
 
         private void Start()
         {
-            Mesh mesh = new Mesh(); //새로운 메시를 만들어준다.
+            Mesh mesh = new Mesh();
 
             Vector3[] vertices = new Vector3[4];
             Vector2[] uv = new Vector2[4];
