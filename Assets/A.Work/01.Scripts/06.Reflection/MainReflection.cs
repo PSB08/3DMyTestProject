@@ -2,7 +2,7 @@ using System;
 using System.Reflection;
 using UnityEngine;
 
-namespace GetType
+namespace ReflectTest
 {
     public class MainReflection : MonoBehaviour
     {
