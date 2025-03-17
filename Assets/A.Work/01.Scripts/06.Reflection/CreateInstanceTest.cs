@@ -6,8 +6,8 @@ namespace ReflectTest.CreateInstance
 {
     class Profile
     {
-        public string Name { get; set; }   
-        public string PhoneNum { get; set; }   
+        public string Name { get; set; }
+        public string PhoneNum { get; set; }
     }
 
     public class CreateInstanceTest : MonoBehaviour
