@@ -20,7 +20,7 @@ namespace ReflectTest.CreateInstance
             PropertyInfo name = type.GetProperty("Name");
             PropertyInfo phoneNum = type.GetProperty("PhoneNum");
 
-            name.SetValue(profile, "ȫ�浿", null);
+            name.SetValue(profile, "홍길동", null);
             phoneNum.SetValue(profile, "010-1234-1234", null);
 
             Debug.Log($"{name.GetValue(profile, null)}, {phoneNum.GetValue(profile, null)}");

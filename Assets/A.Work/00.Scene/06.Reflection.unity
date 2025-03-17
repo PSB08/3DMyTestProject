@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 635121495}
   - component: {fileID: 635121496}
   m_Layer: 0
-  m_Name: TestReflecttion
+  m_Name: TestReflection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
