@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponControll : MonoBehaviour
+public class WeaponController : MonoBehaviour
 {
     [SerializeField] private List<GameObject> weapons;
     private int currentWeaponIndex = 0;

@@ -16,7 +16,7 @@ public class ChangeView : MonoBehaviour
 
     private void Update()
     {
-        // F Å°¸¦ ´©¸¦ ¶§¸¶´Ù ´ÙÀ½ Ä«¸Ş¶ó·Î º¯°æ
+        // F í‚¤ë¥¼ ëˆ„ë¥¼ ë•Œë§ˆë‹¤ ë‹¤ìŒ ì¹´ë©”ë¼ë¡œ ë³€ê²½
         if (Input.GetKeyDown(KeyCode.F))
         {
             currentCameraIndex = (currentCameraIndex + 1) % cameras.Count;

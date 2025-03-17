@@ -34,7 +34,7 @@ public class TurnManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        Debug.Log($"{(currentCharacter is Player ? (currentCharacter as Player).CharacterName : (currentCharacter as Enemy).CharacterName)}ÀÇ ÅÏÀÔ´Ï´Ù.");
+        Debug.Log($"{(currentCharacter is Player ? (currentCharacter as Player).CharacterName : (currentCharacter as Enemy).CharacterName)}ì˜ í„´ì…ë‹ˆë‹¤.");
 
         if (currentCharacter is Enemy enemy)
         {

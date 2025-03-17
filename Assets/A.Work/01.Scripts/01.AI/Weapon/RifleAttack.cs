@@ -8,23 +8,23 @@ public class RifleAttack : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float fireForce = 30f;
-    public float fireRate = 0.2f; //¹ß»ç °£°İ (ÃÊ ´ÜÀ§)
+    public float fireRate = 0.2f; //ë°œì‚¬ ê°„ê²© (ì´ˆ ë‹¨ìœ„)
     public float rightFireRate = 5f;
-    public int bulletCount = 5; // ¹ß»çÇÒ ÃÑ¾Ë °³¼ö
-    public float spreadAngle = 15f; // »êÅºÃÑ ¹ß»ç °¢µµ
+    public int bulletCount = 5; // ë°œì‚¬í•  ì´ì•Œ ê°œìˆ˜
+    public float spreadAngle = 15f; // ì‚°íƒ„ì´ ë°œì‚¬ ê°ë„
 
     private float nextFireTime = 0f;
     private float nextRightFireTime = 0f;
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Time.time >= nextFireTime) // ÁÂÅ¬¸¯
+        if (Input.GetMouseButtonDown(0) && Time.time >= nextFireTime) // ì¢Œí´ë¦­
         {
-            nextFireTime = Time.time + fireRate; // ´ÙÀ½ ¹ß»ç °¡´É ½Ã°£ ¼³Á¤
+            nextFireTime = Time.time + fireRate; // ë‹¤ìŒ ë°œì‚¬ ê°€ëŠ¥ ì‹œê°„ ì„¤ì •
             Shoot();
             animator.SetTrigger("Idle");
         }
-        if (Input.GetMouseButtonDown(1) && Time.time >= nextRightFireTime) // ¸¶¿ì½º ¿ìÅ¬¸¯
+        if (Input.GetMouseButtonDown(1) && Time.time >= nextRightFireTime) // ë§ˆìš°ìŠ¤ ìš°í´ë¦­
         {
             nextRightFireTime = Time.time + rightFireRate;
             ShootShotgun();

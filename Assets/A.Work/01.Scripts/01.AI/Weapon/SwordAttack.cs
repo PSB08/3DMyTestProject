@@ -75,7 +75,7 @@ public class SwordAttack : MonoBehaviour
         Collider[] hitEnemies = Physics.OverlapSphere(transform.position, attackRange, enemyLayer);
         foreach (Collider enemy in hitEnemies)
         {
-            Debug.Log("Àû ÀûÁß: " + enemy.name);
+            Debug.Log("ì  ì ì¤‘: " + enemy.name);
             HpSystem enemyHp = enemy.GetComponent<HpSystem>();
             enemyHp.TakeDamage(20f);
         }

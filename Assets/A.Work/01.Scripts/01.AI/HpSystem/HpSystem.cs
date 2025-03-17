@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class HpSystem : MonoBehaviour
 {
-    [Header("Ã¼·Â ¼³Á¤")]
+    [Header("ì²´ë ¥ ì„¤ì •")]
     public float maxHealth = 100f;
     public float currentHealth;
 
@@ -17,7 +17,7 @@ public class HpSystem : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    // µ¥¹ÌÁö¸¦ ¹Ş´Â ¸Ş¼­µå
+    // ë°ë¯¸ì§€ë¥¼ ë°›ëŠ” ë©”ì„œë“œ
     public void TakeDamage(float amount)
     {
         if (currentHealth <= 0) return;
