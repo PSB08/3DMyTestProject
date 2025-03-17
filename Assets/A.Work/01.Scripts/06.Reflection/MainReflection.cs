@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
@@ -8,6 +9,10 @@ namespace ReflectTest
     {
         private void Start()
         {
+            //Test
+            // object o = Activator.CreateInstance(typeof(int));
+            // List<int> list = Activator.CreateInstance<List<int>>(); 
+            
             int a = 0;
             Type type = a.GetType();
 
