@@ -20,14 +20,21 @@ namespace ReflectTest.CreateInstance
     {
         private void Start()
         {
+            DebugPrint();
+        }
+
+        [ContextMenu("DebugPrint")]
+        private void DebugPrint()
+        {
             Type type = typeof(Profile2);
             Profile2 profile2 = (Profile2)Activator.CreateInstance(type);
             profile2.Name = "홍OO";
-            profile2.Phone = "010 - 1234 - 1234";
+            profile2.Phone = "010 - 1234 - 0000";
             
             MethodInfo method = type.GetMethod("Print");
             method.Invoke(profile2, null);
         }
+        
     }   
 }
 
