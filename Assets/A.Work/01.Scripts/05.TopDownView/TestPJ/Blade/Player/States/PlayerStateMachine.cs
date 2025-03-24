@@ -13,7 +13,6 @@ public class PlayerStateMachine : MonoBehaviour
 
     public float speed = 3f;
     public Vector3 targetPosition;
-    public bool isMoving = false; 
     public PlayerInputSO playerInput;
 
     public GameObject attackEffectPrefab; 
@@ -32,8 +31,11 @@ public class PlayerStateMachine : MonoBehaviour
 
     private void Update()
     {
-        currentState?.Handle(this); 
-        HandleAttackState();
+        currentState?.Handle(this);
+        if (!playerInput.isMoving)
+        {
+            HandleAttackState();
+        }
     }
     
     private void HandleAttackState()

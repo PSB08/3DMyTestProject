@@ -6,7 +6,8 @@ public class PlayerInputSO : ScriptableObject
 {
     public Vector2 moveInput;
     public bool isClicking = false;
-    public bool isAttacking = false; 
+    public bool isAttacking = false;
+    public bool isMoving = false;
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -27,7 +28,7 @@ public class PlayerInputSO : ScriptableObject
 
     public void OnAttack(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && !isMoving)
         {
             Debug.Log("Q 키가 눌렸습니다.");
             isAttacking = !isAttacking;
@@ -39,11 +40,13 @@ public class PlayerInputSO : ScriptableObject
     {
         isClicking = false;
         isAttacking = false;
+        isMoving = false;
     }
 
     private void OnDisable()
     {
         isClicking = false;
         isAttacking = false;
+        isMoving = false;
     }
 }

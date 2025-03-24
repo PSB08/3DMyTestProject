@@ -21,7 +21,7 @@ public class IdleState : EntityState
             if (Physics.Raycast(ray, out hit))
             {
                 player.targetPosition = hit.point;
-                player.isMoving = true;
+                player.playerInput.isMoving = true;
                 player.ChangeState(player.moveState); 
             }
         }
