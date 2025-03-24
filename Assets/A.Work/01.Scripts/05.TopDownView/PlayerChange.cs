@@ -6,34 +6,48 @@ namespace TopDownView.Player
 {
     public class PlayerChange : MonoBehaviour
     {
-        [SerializeField] private GameObject player1;
-        [SerializeField] private GameObject player2;
-        [SerializeField] private TextMeshProUGUI text1;
-        [SerializeField] private TextMeshProUGUI text2;
+        [SerializeField] private GameObject[] players;
+        [SerializeField] private TextMeshProUGUI[] texts;
 
         private void Start()
         {
-            player1.gameObject.SetActive(true);
-            player2.gameObject.SetActive(false);
-            text1.gameObject.SetActive(true);
-            text2.gameObject.SetActive(false);
+            players[0].gameObject.SetActive(true);
+            players[1].gameObject.SetActive(false);
+            players[2].gameObject.SetActive(false);
+            texts[0].gameObject.SetActive(true);
+            texts[1].gameObject.SetActive(false);
+            texts[2].gameObject.SetActive(false);
         }
 
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                player1.gameObject.SetActive(true);
-                player2.gameObject.SetActive(false);
-                text1.gameObject.SetActive(true);
-                text2.gameObject.SetActive(false);
+                players[0].gameObject.SetActive(true);
+                players[1].gameObject.SetActive(false);
+                players[2].gameObject.SetActive(false);
+                texts[0].gameObject.SetActive(true);
+                texts[1].gameObject.SetActive(false);
+                texts[2].gameObject.SetActive(false);
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                player1.gameObject.SetActive(false);
-                player2.gameObject.SetActive(true);
-                text1.gameObject.SetActive(false);
-                text2.gameObject.SetActive(true);
+                players[0].gameObject.SetActive(false);
+                players[1].gameObject.SetActive(true);
+                players[2].gameObject.SetActive(false);
+                texts[0].gameObject.SetActive(false);
+                texts[1].gameObject.SetActive(true);
+                texts[2].gameObject.SetActive(false);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                players[0].gameObject.SetActive(false);
+                players[1].gameObject.SetActive(false);
+                players[2].gameObject.SetActive(true);
+                texts[0].gameObject.SetActive(false);
+                texts[1].gameObject.SetActive(false);
+                texts[2].gameObject.SetActive(true);
             }
 
         }

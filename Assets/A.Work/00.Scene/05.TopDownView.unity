@@ -807,7 +807,7 @@ GameObject:
   - component: {fileID: 543120646}
   - component: {fileID: 543120645}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: 3Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -881,7 +881,7 @@ GameObject:
   - component: {fileID: 576768567}
   - component: {fileID: 576768566}
   m_Layer: 5
-  m_Name: Button
+  m_Name: 1Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1296,11 +1296,11 @@ Transform:
   m_GameObject: {fileID: 1049434754}
   serializedVersion: 2
   m_LocalRotation: {x: 0.46193978, y: -0.33141357, z: 0.19134171, w: 0.8001032}
-  m_LocalPosition: {x: 4.242639, y: 10.392303, z: -4.2426395}
+  m_LocalPosition: {x: 4.242639, y: 10.392303, z: -12.24264}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2115155494}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 60, y: -45, z: 0}
 --- !u!114 &1049434756
 MonoBehaviour:
@@ -1415,15 +1415,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053481404}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 997bbe0a5c4b7d84887a8de081310efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 1240179512}
-  player2: {fileID: 1724310181}
-  text1: {fileID: 1082272887}
-  text2: {fileID: 2045229939}
+  players:
+  - {fileID: 1240179512}
+  - {fileID: 1724310181}
+  - {fileID: 2115155493}
+  texts:
+  - {fileID: 1082272887}
+  - {fileID: 2045229939}
+  - {fileID: 1075467742}
 --- !u!1 &1075467740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,7 +1440,7 @@ GameObject:
   - component: {fileID: 1075467743}
   - component: {fileID: 1075467742}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: 3PlayerTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1572,7 +1576,7 @@ GameObject:
   - component: {fileID: 1082272888}
   - component: {fileID: 1082272887}
   m_Layer: 5
-  m_Name: BtnText
+  m_Name: 1PlayerTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2394,7 +2398,7 @@ GameObject:
   - component: {fileID: 2045229940}
   - component: {fileID: 2045229939}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: 2PlayerTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2553,7 +2557,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 543450652387693289}
-  - {fileID: 1049434755}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &2115155495
@@ -2615,7 +2618,7 @@ MonoBehaviour:
   targetPosition: {x: 0, y: 0, z: 0}
   isMoving: 0
   playerInput: {fileID: 11400000, guid: 0bfcf2d25aab08f4aac28378573de8c5, type: 2}
-  attackEffectPrefab: {fileID: 5925352119862835199, guid: 5048cfc8bf33c524db925402bbc77e44, type: 3}
+  attackEffectPrefab: {fileID: 8471807994897348650, guid: 39ff6535edacbd545b979acb1718133b, type: 3}
   attackIndicator: {fileID: 50316100}
   stateText: {fileID: 1075467742}
 --- !u!114 &2115155498
@@ -2640,7 +2643,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115155493}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: c8896d83481fca741b2a75c5b0715041, type: 3}
   m_Controller: {fileID: 9100000, guid: 3310f07ea3e21d04ba2f8d1b57f2d185, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -3065,7 +3068,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652387693289}
-  - component: {fileID: 919132148185008212}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -3073,28 +3075,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &919132148185008212
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148185008211}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c8896d83481fca741b2a75c5b0715041, type: 3}
-  m_Controller: {fileID: 9100000, guid: 3310f07ea3e21d04ba2f8d1b57f2d185, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &983471312569572288
 GameObject:
   m_ObjectHideFlags: 0
@@ -6200,3 +6180,4 @@ SceneRoots:
   - {fileID: 214557711}
   - {fileID: 1634210881}
   - {fileID: 1053481405}
+  - {fileID: 1049434755}
