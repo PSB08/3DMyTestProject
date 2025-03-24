@@ -9,7 +9,7 @@ public class PlayerStateMachine : MonoBehaviour
     public Vector3 targetPosition;
     [Space(10)]
     [Header("Prefabs")]
-    public GameObject attackEffectPrefab; 
+    [SerializeField] private GameObject attackEffectPrefab; 
     private GameObject currentAttackEffect; 
     [Space(10)]
     [Header("Scriptable Objects")]
