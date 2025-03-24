@@ -119,7 +119,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.46075657
+      - time: 0.55569327
         functionName: AnimationEnd
         data: 
         objectReferenceParameter: {instanceID: 0}

@@ -4,23 +4,27 @@ using UnityEngine.UI;
 
 public class PlayerStateMachine : MonoBehaviour
 {
+    [Header("Value")]
+    public float speed = 3f;
+    public Vector3 targetPosition;
+    [Space(10)]
+    [Header("Prefabs")]
+    public GameObject attackEffectPrefab; 
+    private GameObject currentAttackEffect; 
+    [Space(10)]
+    [Header("Scriptable Objects")]
     public EntityState idleState;
     public EntityState moveState;
     public EntityState attackState;
-
+    private EntityState currentState;
+    public PlayerInputSO playerInput;
+    [Space(10)]
+    [Header("Components")]
     public EntityAnimator entityAnimator; 
     public CharacterController characterController;
-
-    public float speed = 3f;
-    public Vector3 targetPosition;
-    public PlayerInputSO playerInput;
-
-    public GameObject attackEffectPrefab; 
-    private GameObject currentAttackEffect; 
+    [Space(10)]
+    [Header("UI")]
     public Image attackIndicator; 
-
-    private EntityState currentState;
-
     public TextMeshProUGUI stateText;
 
     private void Start()
@@ -86,8 +90,6 @@ public class PlayerStateMachine : MonoBehaviour
         if (attackEffectPrefab != null)
         {
             Vector3 attackPosition = targetPosition;
-            attackPosition.y += 0.1f; 
-
             currentAttackEffect = Instantiate(attackEffectPrefab, attackPosition, Quaternion.identity);
         }
 
