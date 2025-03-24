@@ -81,7 +81,6 @@ public class PlayerStateMachine : MonoBehaviour
 
     public void AnimationEnd()
     {
-        playerInput.isAttacking = false;
         if (currentAttackEffect != null)
         {
             Destroy(currentAttackEffect);
@@ -92,7 +91,7 @@ public class PlayerStateMachine : MonoBehaviour
             Vector3 attackPosition = targetPosition;
             currentAttackEffect = Instantiate(attackEffectPrefab, attackPosition, Quaternion.identity);
         }
-
+        playerInput.isAttacking = false;
         entityAnimator.SetParam("isAttacking", false); 
         ChangeState(idleState);
     }

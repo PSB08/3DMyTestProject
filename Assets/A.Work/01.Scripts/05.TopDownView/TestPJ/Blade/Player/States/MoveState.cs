@@ -32,7 +32,7 @@ public class MoveState : EntityState
         player.characterController.Move(direction * player.speed * Time.deltaTime);
         player.transform.rotation = Quaternion.Slerp(player.transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * 10f);
 
-        if (Vector3.Distance(player.transform.position, player.targetPosition) < 0.6f)
+        if (Vector3.Distance(player.transform.position, player.targetPosition) < 1.5f)
         {
             player.playerInput.isMoving = false;
 
