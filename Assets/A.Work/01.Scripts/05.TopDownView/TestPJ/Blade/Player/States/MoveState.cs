@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [CreateAssetMenu(fileName = "MoveState", menuName = "EntityStates/Move")]
 public class MoveState : EntityState
