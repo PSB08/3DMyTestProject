@@ -8,6 +8,7 @@ public class MoveState : EntityState
     
     public override void Enter(PlayerStateMachine player)
     {
+        player.attackIndicator.color = Color.white;
         player.entityAnimator.SetParam("isMoving", true);
         player.entityAnimator.SetParam("isIdle", false);
         

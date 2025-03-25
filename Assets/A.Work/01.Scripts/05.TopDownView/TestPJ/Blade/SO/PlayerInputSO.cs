@@ -5,9 +5,9 @@ using UnityEngine.InputSystem;
 public class PlayerInputSO : ScriptableObject
 {
     public Vector2 moveInput;
+    public bool isMoving = false;
     public bool isClicking = false; 
     public bool isAttacking = false;
-    public bool isMoving = false;
 
     public void OnMove(InputAction.CallbackContext context)
     {

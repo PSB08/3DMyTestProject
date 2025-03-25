@@ -5,7 +5,8 @@ public class AttackState : EntityState
 {
     public override void Enter(PlayerStateMachine player)
     {
-        player.ExecuteAttack(); 
+        player.entityAnimator.SetParam("Attack"); 
+        player.entityAnimator.SetParam("isAttacking", true); 
     }
 
     public override void Handle(PlayerStateMachine player)

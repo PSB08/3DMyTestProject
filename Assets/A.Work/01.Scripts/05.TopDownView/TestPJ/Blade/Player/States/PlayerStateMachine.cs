@@ -73,12 +73,6 @@ public class PlayerStateMachine : MonoBehaviour
         }
     }
 
-    public void ExecuteAttack()
-    {
-        entityAnimator.SetParam("Attack"); 
-        entityAnimator.SetParam("isAttacking", true); 
-    }
-
     public void AnimationEnd()
     {
         if (currentAttackEffect != null)
