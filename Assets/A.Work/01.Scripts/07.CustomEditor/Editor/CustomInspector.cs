@@ -9,7 +9,13 @@ namespace Scripts.CustomEditor
         private int itemID;
         private string itemName;
         public PrimitiveType shape = PrimitiveType.Cube;
-    
+        private ItemClass[] _itemClasses;
+
+        private void Awake()
+        {
+            _itemClasses = FindObjectsOfType<ItemClass>();
+        }
+
         [MenuItem("MyEditor/MakeShape", priority = 0)]
         private static void OpenWindow()
         {
@@ -35,7 +41,7 @@ namespace Scripts.CustomEditor
         
         private void CreateItem()
         {
-            ItemClass existItem = FindObjectsOfType<ItemClass>().FirstOrDefault(item => item.ID == itemID);
+            ItemClass existItem = _itemClasses.FirstOrDefault(item => item.ID == itemID);
 
             if (existItem != null)
             {
