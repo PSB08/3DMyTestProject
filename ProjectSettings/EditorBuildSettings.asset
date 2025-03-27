@@ -14,6 +14,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/A.Work/00.Scene/02.TurnGame.unity
     guid: 95cdf629ecd367747a61b4adea21b0b6
+  - enabled: 1
+    path: Assets/A.Work/00.Scene/03.Light.unity
+    guid: 0e7652096c5c6d7429a8cacafe715f03
+  - enabled: 1
+    path: Assets/A.Work/00.Scene/04.DeltaTimeTest.unity
+    guid: fda2795499a9a0540bf851568fef4f03
+  - enabled: 1
+    path: Assets/A.Work/00.Scene/05.TopDownView.unity
+    guid: 0877a22b267769247893e0295f93ca17
+  - enabled: 1
+    path: Assets/A.Work/00.Scene/06.Reflection.unity
+    guid: 5dfd749ffbd881e4e8db8e420afbc581
+  - enabled: 1
+    path: Assets/A.Work/00.Scene/07.CustomEditor.unity
+    guid: e39b10ea17dd1564dac111f10bdbe03d
+  - enabled: 1
+    path: Assets/A.Work/00.Scene/08.EngineTest.unity
+    guid: aaab6ea5d645c784eb94c042ddc99cfa
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 4abcd61cd1204a54fb553f7f259b6c49, type: 3}
   m_UseUCBPForAssetBundles: 0
