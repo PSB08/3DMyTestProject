@@ -25,7 +25,7 @@ namespace Scripts.CustomEditor
         private void OnGUI()
         {
             GUILayout.Label("아이템 설명", EditorStyles.boldLabel);
-        
+            
             itemID = EditorGUILayout.IntField("오브젝트 ID", itemID);
             itemName = EditorGUILayout.TextField("오브젝트 이름", itemName);
             
@@ -88,4 +88,3 @@ namespace Scripts.CustomEditor
         
     }    
 }
-

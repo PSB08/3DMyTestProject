@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/A.Work/00.Scene/07.CustomEditor.unity
     guid: e39b10ea17dd1564dac111f10bdbe03d
   - enabled: 1
-    path: Assets/A.Work/00.Scene/08.EngineTest.unity
+    path: Assets/A.Work/00.Scene/08.RayTest.unity
     guid: aaab6ea5d645c784eb94c042ddc99cfa
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 4abcd61cd1204a54fb553f7f259b6c49, type: 3}
