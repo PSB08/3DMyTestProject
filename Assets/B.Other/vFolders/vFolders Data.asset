@@ -26,13 +26,15 @@ MonoBehaviour:
     - 4150d84c59941f147af4177cabb2862d
     - a5a502138076b344b91e46cc41e71618
     - c08db570ffaa40242880138493b727eb
+    - 50127dbfe876d1f48adfd042df179eed
+    - 1a9fec2590b8db845a13f352d16c4a44
     values:
     - colorIndex: 0
       iconNameOrGuid: cs Script Icon
     - colorIndex: 0
       iconNameOrGuid: SceneAsset Icon
     - colorIndex: 0
-      iconNameOrGuid: BoxCollider Icon
+      iconNameOrGuid: PrefabModel Icon
     - colorIndex: 0
       iconNameOrGuid: Prefab Icon
     - colorIndex: 0
@@ -48,6 +50,10 @@ MonoBehaviour:
     - colorIndex: 0
       iconNameOrGuid: Font Icon
     - colorIndex: 0
-      iconNameOrGuid: PrefabModel Icon
+      iconNameOrGuid: BoxCollider Icon
     - colorIndex: 0
       iconNameOrGuid: AssemblyDefinitionAsset Icon
+    - colorIndex: 1
+      iconNameOrGuid: 
+    - colorIndex: 2
+      iconNameOrGuid: 
