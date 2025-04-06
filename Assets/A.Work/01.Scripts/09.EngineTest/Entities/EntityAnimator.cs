@@ -2,7 +2,7 @@
 
 namespace Code.Entities
 {
-    public class PlayerAnimator : MonoBehaviour, IEntityComponent
+    public class EntityAnimator : MonoBehaviour, IEntityComponent
     {
         [SerializeField] private Animator animator;
         
