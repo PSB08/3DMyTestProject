@@ -17,12 +17,6 @@ namespace Code.Player
             _entity = entity;
         }
 
-        public void SetDestination(Vector3 destination)
-        {
-            agent.isStopped = false;
-            agent.SetDestination(destination);
-        }
-
         public void StopImmediately()
         {
             if (agent != null)
@@ -34,7 +28,6 @@ namespace Code.Player
 
         private void Update()
         {
-            // 선택 사항: 회전 수동 보정 (필요 시만)
             if (agent.velocity.sqrMagnitude > 0.1f)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(agent.velocity.normalized);

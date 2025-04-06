@@ -1,9 +1,9 @@
 using Code.Entities;
 using Code.FSM;
 
-namespace Code.Player
+namespace Code.Player.States
 {
-    public class PlayerState_9 : EntityState
+    public class PlayerState_9 : EntityState_9
     {
         protected Player_9 Player;
         protected PlayerMovement_9 _movement;

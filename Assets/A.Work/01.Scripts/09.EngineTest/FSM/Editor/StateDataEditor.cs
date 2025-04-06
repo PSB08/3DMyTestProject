@@ -20,11 +20,11 @@ namespace Code.FSM.Editor
             
             classField.choices.Clear();
             
-            Assembly fsmAssembly = Assembly.GetAssembly(typeof(EntityState));
+            Assembly fsmAssembly = Assembly.GetAssembly(typeof(EntityState_9));
             
             List<Type> stateTypes = fsmAssembly.GetTypes()
                 .Where(type =>  type.IsAbstract == false
-                                && type.IsSubclassOf(typeof(EntityState)))
+                                && type.IsSubclassOf(typeof(EntityState_9)))
                 .ToList();
 
             stateTypes.ForEach(type => classField.choices.Add(type.FullName));

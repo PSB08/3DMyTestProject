@@ -33,5 +33,5 @@ EditorBuildSettings:
     path: Assets/A.Work/00.Scene/08.RayTest.unity
     guid: aaab6ea5d645c784eb94c042ddc99cfa
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 4abcd61cd1204a54fb553f7f259b6c49, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: ddc787172dc159a428ea9e102b10975b, type: 3}
   m_UseUCBPForAssetBundles: 0

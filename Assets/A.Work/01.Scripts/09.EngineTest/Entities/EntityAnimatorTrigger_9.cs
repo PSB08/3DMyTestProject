@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Code.Entities
 {
-    public class EntityAnimatorTrigger : MonoBehaviour, IEntityComponent
+    public class EntityAnimatorTrigger_9 : MonoBehaviour, IEntityComponent
     {
         public Action OnAnimatonEndTrigger;
         public Action<bool> OnRollingStatusChange;

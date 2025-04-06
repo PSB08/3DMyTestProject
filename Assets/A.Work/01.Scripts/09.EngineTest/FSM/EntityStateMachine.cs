@@ -7,19 +7,19 @@ namespace Code.FSM
 {
     public class EntityStateMachine
     {
-        public EntityState CurrentState { get; private set; }
+        public EntityState_9 CurrentState { get; private set; }
 
-        private Dictionary<string, EntityState> _states;
+        private Dictionary<string, EntityState_9> _states;
 
         public EntityStateMachine(Entity entity, StateDataSO[] stateList)
         {
-            _states = new Dictionary<string, EntityState>();
+            _states = new Dictionary<string, EntityState_9>();
             foreach (StateDataSO state in stateList)
             {
                 Type type = Type.GetType(state.className);
                 Debug.Assert(type != null, $"Finding type is null : {state.className}");
-                EntityState entityState = Activator.CreateInstance(type, entity, state.animationHash)
-                    as EntityState;
+                EntityState_9 entityState = Activator.CreateInstance(type, entity, state.animationHash)
+                    as EntityState_9;
                 
                 _states.Add(state.stateName, entityState);
             }
@@ -27,7 +27,7 @@ namespace Code.FSM
 
         public void ChangeState(string newStateName, bool forced = false)
         {
-            EntityState newState = _states.GetValueOrDefault(newStateName);
+            EntityState_9 newState = _states.GetValueOrDefault(newStateName);
             Debug.Assert(newState != null, $"State is null {newStateName}");
             
             if(!forced && CurrentState == newState)
