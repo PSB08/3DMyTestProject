@@ -15,6 +15,10 @@ namespace Code.Player.States
         {
             base.Update();
             
+            Vector3 euler = Player.transform.eulerAngles;
+            euler.x = 0;
+            Player.transform.eulerAngles = euler;
+            
             bool isOnLink = Player._agent.isOnOffMeshLink;
             
             if (_wasOnLink && !isOnLink)
@@ -26,12 +30,6 @@ namespace Code.Player.States
             }
 
             _wasOnLink = isOnLink;
-        }
-
-        public override void Enter()
-        {
-            base.Enter();
-            Debug.Log("점프 입장");
         }
         
     }    

@@ -34,7 +34,7 @@ namespace Code.FSM
             _entityAnimator.SetParam(_animationHash, false);
         }
 
-        public virtual void AnimationEndTrigger() => _isTriggerCall = true;
+        protected virtual void AnimationEndTrigger() => _isTriggerCall = true;
     
     }
 }

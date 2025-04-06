@@ -19,6 +19,7 @@ namespace Code.Player
         private string currentState = "IDLE";
 
         private bool isMovingToAttack = false;
+        private bool isKeepingAttack = false;
 
         protected override void Awake()
         {
@@ -36,26 +37,34 @@ namespace Code.Player
         private void Update()
         {
             _stateMachine.UpdateStateMachine();
-
+            
             if (_attackTarget != null && isMovingToAttack)
             {
-                if (!_agent.pathPending &&
-                    _agent.remainingDistance <= _agent.stoppingDistance &&
-                    (!_agent.hasPath || _agent.velocity.sqrMagnitude < 0.01f))
+                bool hasArrived = !_agent.pathPending &&
+                                  _agent.remainingDistance <= _agent.stoppingDistance &&
+                                  (!_agent.hasPath || _agent.velocity.sqrMagnitude < 0.01f);
+
+                if (hasArrived)
                 {
                     isMovingToAttack = false;
                     _agent.isStopped = true;
                     ChangeState("ATTACK");
+                    return;
                 }
             }
-            else
+            
+            if (_attackTarget != null && isKeepingAttack && currentState != "ATTACK")
             {
-                if (_agent.isOnOffMeshLink && currentState != "JUMP")
-                {
-                    ChangeState("JUMP");
-                }
+                ChangeState("ATTACK");
+                return;
             }
-
+            
+            if (_agent.isOnOffMeshLink && currentState != "JUMP")
+            {
+                ChangeState("JUMP");
+                return;
+            }
+            
             if (_attackTarget != null && currentState == "ATTACK")
             {
                 SmoothRotateToTarget();
@@ -87,8 +96,8 @@ namespace Code.Player
             _agent.SetDestination(destination);
             SmoothRotateToTarget();
         }
-    
-        private void SmoothRotateToTarget()
+        
+        public void SmoothRotateToTarget()
         {
             if (_attackTarget == null) return;
 
