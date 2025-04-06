@@ -28,6 +28,7 @@ namespace Code.Player
 
         private void HandleClick(bool isPressed)
         {
+            Debug.Log("Test");
             if (isPressed == false) return;
             if (_player.GetCurrentState() == "ATTACK")
                 return;
