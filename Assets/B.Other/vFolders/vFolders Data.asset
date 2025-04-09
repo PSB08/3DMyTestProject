@@ -13,47 +13,5 @@ MonoBehaviour:
   m_Name: vFolders Data
   m_EditorClassIdentifier: 
   folderDatas_byGuid:
-    keys:
-    - 822d0b95545ce0e439f3fac30a860ee8
-    - ff38145e5094a7645a3bdb2445c11599
-    - 4f4c639da5b20a942801794b76dcc484
-    - 168031a7c7fc275428fd48c00d25eab6
-    - 8a79e732cd117ca4b84c5e4cf673a0ee
-    - 29add6f6d1840ce41895fd83abe7c252
-    - 7b5899bc3d6a1bf48924d6af44947e81
-    - 483e1d5710282ec44a72f487e3dfee47
-    - de94d7464badcac47b54b9827aebb2f3
-    - 4150d84c59941f147af4177cabb2862d
-    - a5a502138076b344b91e46cc41e71618
-    - c08db570ffaa40242880138493b727eb
-    - 50127dbfe876d1f48adfd042df179eed
-    - 1a9fec2590b8db845a13f352d16c4a44
-    values:
-    - colorIndex: 0
-      iconNameOrGuid: cs Script Icon
-    - colorIndex: 0
-      iconNameOrGuid: SceneAsset Icon
-    - colorIndex: 0
-      iconNameOrGuid: PrefabModel Icon
-    - colorIndex: 0
-      iconNameOrGuid: Prefab Icon
-    - colorIndex: 0
-      iconNameOrGuid: AnimatorController Icon
-    - colorIndex: 0
-      iconNameOrGuid: Material Icon
-    - colorIndex: 0
-      iconNameOrGuid: RawImage Icon
-    - colorIndex: 0
-      iconNameOrGuid: ScriptableObject Icon
-    - colorIndex: 0
-      iconNameOrGuid: AudioClip Icon
-    - colorIndex: 0
-      iconNameOrGuid: Font Icon
-    - colorIndex: 0
-      iconNameOrGuid: BoxCollider Icon
-    - colorIndex: 0
-      iconNameOrGuid: AssemblyDefinitionAsset Icon
-    - colorIndex: 1
-      iconNameOrGuid: 
-    - colorIndex: 2
-      iconNameOrGuid: 
+    keys: []
+    values: []
