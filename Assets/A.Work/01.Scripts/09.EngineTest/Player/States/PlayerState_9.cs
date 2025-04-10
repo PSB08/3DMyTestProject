@@ -6,7 +6,7 @@ namespace Code.Player.States
     public class PlayerState_9 : EntityState_9
     {
         protected Player_9 Player;
-        protected PlayerMovement_9 _movement;
+        protected PlayerMovement_9 _movement;   
 
         public PlayerState_9(Entity entity, int animationHash) : base(entity, animationHash)
         {
