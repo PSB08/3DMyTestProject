@@ -243,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedVersion: 1
   m_AgentTypeID: 0
-  m_StartPoint: {x: 0, y: 0, z: 4.3637743}
+  m_StartPoint: {x: 0, y: 0, z: 2.47818}
   m_EndPoint: {x: 0.039072752, y: -0.3032961, z: 9.867925}
   m_StartTransform: {fileID: 0}
   m_EndTransform: {fileID: 0}
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_IsOverridingCost: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
-  m_Area: 0
+  m_Area: 2
 --- !u!1 &509492222
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1108376928}
   - component: {fileID: 1108376929}
+  - component: {fileID: 1108376930}
   m_Layer: 0
   m_Name: Movement
   m_TagString: Untagged
@@ -723,6 +724,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 1763432534}
   stopThreshold: 0.6
+--- !u!114 &1108376930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108376927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555bb1c65576ff04581fb0383814c5d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1134442085
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +870,7 @@ MonoBehaviour:
   m_IsOverridingCost: 0
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
-  m_Area: 0
+  m_Area: 2
 --- !u!1001 &1422605346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1158,7 +1171,7 @@ NavMeshAgent:
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
+  m_AutoTraverseOffMeshLink: 0
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
