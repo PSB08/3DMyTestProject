@@ -35,14 +35,12 @@ public class PlayerJumpCompo_9 : MonoBehaviour
         {
             _jumpTimer += Time.deltaTime;
             float t = Mathf.Clamp01(_jumpTimer / _jumpDuration);
-
-            // 점프 포물선 계산
+            
             Vector3 pos = Vector3.Lerp(_jumpStart, _jumpEnd, t);
-            pos.y += Mathf.Sin(t * Mathf.PI) * 2.0f;  // 점프 높이
+            pos.y += Mathf.Sin(t * Mathf.PI) * 2.0f; 
 
             _playerTransform.position = pos;
-
-            // 회전 적용
+            
             Vector3 direction = (_jumpEnd - _jumpStart);
             direction.y = 0;
             if (direction.sqrMagnitude > 0.01f)

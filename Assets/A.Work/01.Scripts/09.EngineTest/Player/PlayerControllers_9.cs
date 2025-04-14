@@ -8,7 +8,7 @@ namespace Code.Player
     public class PlayerControllers_9 : MonoBehaviour
     {
         [SerializeField] private PlayerInputSO_9 inputSO;
-        [FormerlySerializedAs("unitMovement")] [SerializeField] private PlayerMovement_9 playerMovement;
+        [SerializeField] private PlayerMovement_9 playerMovement;
         private Player_9 _player;
 
         private void Awake()

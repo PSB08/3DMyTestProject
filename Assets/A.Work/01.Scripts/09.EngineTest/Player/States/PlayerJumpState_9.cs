@@ -15,8 +15,7 @@ namespace Code.Player.States
         {
             base.Enter();
             Player._agent.autoTraverseOffMeshLink = false;
-
-            // PlayerJumpCompo_9 초기화
+            
             _jumpCompo = Player.GetComponentInChildren<PlayerJumpCompo_9>();
             _jumpCompo.Initialize(Player.transform, Player._agent);
 
@@ -30,13 +29,11 @@ namespace Code.Player.States
         public override void Update()
         {
             base.Update();
-
-            // 점프 상태 업데이트
+            
             if (_jumpCompo != null && _jumpCompo.IsJumping)
             {
                 _jumpCompo.UpdateJump();
-
-                // 점프 완료 후 상태 변경
+                
                 if (!_jumpCompo.IsJumping)
                 {
                     if (Player._agent.velocity.sqrMagnitude > 0.1f)

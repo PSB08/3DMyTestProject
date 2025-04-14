@@ -17,7 +17,7 @@ namespace Scripts.RotateAxis
 
         private void Start()
         {
-            ApplyView(); // 시작할 때 현재 뷰에 맞게 설정
+            ApplyView();
         }
 
         private void Update()
