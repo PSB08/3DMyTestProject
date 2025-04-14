@@ -47,6 +47,8 @@ namespace Code.Player
                 if (hasArrived)
                 {
                     isMovingToAttack = false;
+                    //공격 유지 시 추가
+                    //isKeepingAttack = true;
                     _agent.isStopped = true;
                     ChangeState("ATTACK");
                     return;
@@ -113,6 +115,7 @@ namespace Code.Player
         public void ClearAttackTarget()
         {
             _attackTarget = null;
+            isKeepingAttack = false;
             isMovingToAttack = false;
         }
 

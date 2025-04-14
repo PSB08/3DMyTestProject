@@ -1,7 +1,6 @@
 using TopDownView.Player;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Serialization;
 
 namespace Code.Player
 {
@@ -29,6 +28,7 @@ namespace Code.Player
         private void HandleClick(bool isPressed)
         {
             if (isPressed == false) return;
+            //공격 유지 시 삭제
             if (_player.GetCurrentState() == "ATTACK")
                 return;
 

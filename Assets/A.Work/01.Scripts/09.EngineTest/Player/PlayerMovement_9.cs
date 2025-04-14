@@ -1,11 +1,12 @@
 using Code.Entities;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Code.Player
 {
     public class PlayerMovement_9 : MonoBehaviour, IEntityComponent
     {
-        [SerializeField] private UnityEngine.AI.NavMeshAgent agent;
+        [SerializeField] private NavMeshAgent agent;
         [SerializeField] private float stopThreshold = 0.6f;
 
         private Entity _entity;

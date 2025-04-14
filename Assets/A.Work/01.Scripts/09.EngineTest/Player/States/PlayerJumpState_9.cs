@@ -19,7 +19,7 @@ namespace Code.Player.States
             _jumpCompo = Player.GetComponentInChildren<PlayerJumpCompo_9>();
             _jumpCompo.Initialize(Player.transform, Player._agent);
 
-            if (Player._agent.isOnOffMeshLink)
+            if (Player._agent.isOnOffMeshLink && !_jumpCompo.IsJumping)
             {
                 var linkData = Player._agent.currentOffMeshLinkData;
                 _jumpCompo.StartJump(linkData.startPos, linkData.endPos);
