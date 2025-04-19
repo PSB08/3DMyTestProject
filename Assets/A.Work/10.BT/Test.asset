@@ -12,16 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
   m_Name: Test Blackboard
   m_EditorClassIdentifier: 
-  VersionTimestamp: 638807062275086942
+  VersionTimestamp: 638807073838557442
   AssetID:
     m_Value0: 0
     m_Value1: 0
   m_Blackboard:
     m_Variables:
     - rid: 8930767141280415965
-    - rid: 8930767141280415974
-    - rid: 8930767141280415984
-    - rid: 8930767141280415995
   m_SharedBlackboardVariableGuids: []
   references:
     version: 2
@@ -34,30 +31,6 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 0}
-    - rid: 8930767141280415974
-      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 12541256059493022072
-          m_Value1: 15729740265241309103
-        Name: PlayerTransform
-        m_Value: {fileID: 0}
-    - rid: 8930767141280415984
-      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 4975540108359840106
-          m_Value1: 17881626871779908462
-        Name: IsPlayerInRange
-        m_Value: 0
-    - rid: 8930767141280415995
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 4366255295585140931
-          m_Value1: 1174513710140911418
-        Name: DetectionRange
-        m_Value: 0
 --- !u!114 &-7571360385615682758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,7 +61,7 @@ MonoBehaviour:
   m_Nodes:
   - rid: 8930767141280415962
   - rid: 8930767141280416006
-  m_VersionTimestamp: 638807062350977430
+  m_VersionTimestamp: 638807073846962032
   m_DebugInfo: {fileID: -7571360385615682758}
   m_RuntimeGraph: {fileID: 5472003110673824162}
   AssetID:
@@ -124,7 +97,7 @@ MonoBehaviour:
     - rid: 8930767141280415962
       type: {class: StartNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-        Position: {x: 0, y: 0}
+        Position: {x: -2.6667223, y: -18.666653}
         ID:
           m_Value0: 13602465817985448407
           m_Value1: 17359305698046522718
@@ -153,7 +126,7 @@ MonoBehaviour:
     - rid: 8930767141280416006
       type: {class: CompositeNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-        Position: {x: 0.0787909, y: 115.5804}
+        Position: {x: -3.1212091, y: 112.91373}
         ID:
           m_Value0: 1379648741992617302
           m_Value1: 12470018551621757374
@@ -204,10 +177,7 @@ MonoBehaviour:
     m_Value1: 0
   m_Variables:
   - rid: 8930767141280415964
-  - rid: 8930767141280415973
-  - rid: 8930767141280415983
-  - rid: 8930767141280415994
-  m_VersionTimestamp: 638807062275086942
+  m_VersionTimestamp: 638807073838557442
   m_CommandBuffer:
     m_Commands: []
   m_RuntimeBlackboardAsset: {fileID: -7882893928524241722}
@@ -224,36 +194,6 @@ MonoBehaviour:
         IsExposed: 1
         m_IsShared: 0
         m_Value: {fileID: 0}
-    - rid: 8930767141280415973
-      type: {class: 'TypedVariableModel`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        ID:
-          m_Value0: 12541256059493022072
-          m_Value1: 15729740265241309103
-        Name: PlayerTransform
-        IsExposed: 1
-        m_IsShared: 0
-        m_Value: {fileID: 0}
-    - rid: 8930767141280415983
-      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        ID:
-          m_Value0: 4975540108359840106
-          m_Value1: 17881626871779908462
-        Name: IsPlayerInRange
-        IsExposed: 1
-        m_IsShared: 0
-        m_Value: 0
-    - rid: 8930767141280415994
-      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        ID:
-          m_Value0: 4366255295585140931
-          m_Value1: 1174513710140911418
-        Name: DetectionRange
-        IsExposed: 1
-        m_IsShared: 0
-        m_Value: 0
 --- !u!114 &5472003110673824162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,16 +207,16 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   Graphs:
-  - rid: 8930767141280416042
+  - rid: 8930767141280416065
   RootGraph:
-    rid: 8930767141280416042
+    rid: 8930767141280416065
   m_DebugInfo: {fileID: -7571360385615682758}
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 8930767141280416042
+    - rid: 8930767141280416065
       type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         AuthoringAssetID:
@@ -284,63 +224,60 @@ MonoBehaviour:
           m_Value1: 18051891791796365833
         m_DebugInfo: {fileID: 0}
         Root:
-          rid: 8930767141280416043
+          rid: 8930767141280416066
         BlackboardReference:
-          rid: 8930767141280416044
+          rid: 8930767141280416067
         BlackboardGroupReferences: []
         m_ActiveNodes: []
         m_NodesToTick: []
         m_NodesToEnd:
-          rid: 8930767141280416045
+          rid: 8930767141280416068
         m_EndedNodes:
-          rid: 8930767141280416046
-        m_VersionTimestamp: 638807062350977430
-    - rid: 8930767141280416043
+          rid: 8930767141280416069
+        m_VersionTimestamp: 638807073846962032
+    - rid: 8930767141280416066
       type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 13602465817985448407
           m_Value1: 17359305698046522718
         Graph:
-          rid: 8930767141280416042
+          rid: 8930767141280416065
         m_Parent:
           rid: -2
         m_Child:
-          rid: 8930767141280416047
+          rid: 8930767141280416070
         Repeat: 0
         AllowMultipleRepeatsPerTick: 0
-    - rid: 8930767141280416044
+    - rid: 8930767141280416067
       type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         m_Blackboard:
-          rid: 8930767141280416048
+          rid: 8930767141280416071
         m_Source: {fileID: -7882893928524241722}
-    - rid: 8930767141280416045
+    - rid: 8930767141280416068
       type: {class: 'Stack`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic, asm: mscorlib}
       data: 
-    - rid: 8930767141280416046
+    - rid: 8930767141280416069
       type: {class: 'HashSet`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic, asm: System.Core}
       data: 
-    - rid: 8930767141280416047
+    - rid: 8930767141280416070
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 1379648741992617302
           m_Value1: 12470018551621757374
         Graph:
-          rid: 8930767141280416042
+          rid: 8930767141280416065
         m_Parent:
-          rid: 8930767141280416043
+          rid: 8930767141280416066
         m_Children: []
-    - rid: 8930767141280416048
+    - rid: 8930767141280416071
       type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         m_Variables:
-        - rid: 8930767141280416049
-        - rid: 8930767141280416050
-        - rid: 8930767141280416051
-        - rid: 8930767141280416052
-    - rid: 8930767141280416049
+        - rid: 8930767141280416072
+    - rid: 8930767141280416072
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
@@ -348,27 +285,3 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 0}
-    - rid: 8930767141280416050
-      type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 12541256059493022072
-          m_Value1: 15729740265241309103
-        Name: PlayerTransform
-        m_Value: {fileID: 0}
-    - rid: 8930767141280416051
-      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 4975540108359840106
-          m_Value1: 17881626871779908462
-        Name: IsPlayerInRange
-        m_Value: 0
-    - rid: 8930767141280416052
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 4366255295585140931
-          m_Value1: 1174513710140911418
-        Name: DetectionRange
-        m_Value: 0
