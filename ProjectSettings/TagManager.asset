@@ -12,6 +12,7 @@ TagManager:
   - Bullet
   - Manager
   - Spawner
+  - Targets
   layers:
   - Default
   - TransparentFX
