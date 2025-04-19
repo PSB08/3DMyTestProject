@@ -13,5 +13,17 @@ MonoBehaviour:
   m_Name: vFolders Data
   m_EditorClassIdentifier: 
   folderDatas_byGuid:
-    keys: []
-    values: []
+    keys:
+    - 822d0b95545ce0e439f3fac30a860ee8
+    - ff38145e5094a7645a3bdb2445c11599
+    - 50127dbfe876d1f48adfd042df179eed
+    - 1a9fec2590b8db845a13f352d16c4a44
+    values:
+    - colorIndex: 0
+      iconNameOrGuid: cs Script Icon
+    - colorIndex: 0
+      iconNameOrGuid: SceneAsset Icon
+    - colorIndex: 1
+      iconNameOrGuid: 
+    - colorIndex: 3
+      iconNameOrGuid: 
