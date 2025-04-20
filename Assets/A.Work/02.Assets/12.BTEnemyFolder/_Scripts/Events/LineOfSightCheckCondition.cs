@@ -11,7 +11,7 @@ public partial class LineOfSightCheckCondition : Condition
 
     public override bool IsTrue()
     {
-        return true;
+        return Detector.Value.PerformDetection(Target.Value) != null;
     }
 
     

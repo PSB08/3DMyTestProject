@@ -6564,7 +6564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3177474708539373654, guid: 56ed3a9564f932e4aba6babf56657f5c, type: 3}
       propertyPath: m_playerLayerMask.m_Bits
-      value: 8
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 4615855687673498026, guid: 56ed3a9564f932e4aba6babf56657f5c, type: 3}
       propertyPath: m_Enabled
@@ -6604,6 +6604,7 @@ MonoBehaviour:
   - rid: 8930767167898517686
   - rid: 8930767167898517687
   - rid: 8930767167898517998
+  - rid: 8930767170344321340
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
@@ -6633,6 +6634,14 @@ MonoBehaviour:
           m_Value1: 1883711714398255467
         Name: New Range Detector
         m_Value: {fileID: 2878426043443916154}
+    - rid: 8930767170344321340
+      type: {class: 'BlackboardVariable`1[[LineOfSightDetector, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5860680670547837615
+          m_Value1: 2761022442412468792
+        Name: New Line Of Sight Detector
+        m_Value: {fileID: 2878426043443916155}
 --- !u!114 &2878426043443916154 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4615855687673498026, guid: 56ed3a9564f932e4aba6babf56657f5c, type: 3}
@@ -6642,6 +6651,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef6fa4c7c95d266489a28466ecc92337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2878426043443916155 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3177474708539373654, guid: 56ed3a9564f932e4aba6babf56657f5c, type: 3}
+  m_PrefabInstance: {fileID: 2878426043443916151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2878426043443916152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6fae7b6352c154097c35d503e42e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &3093767352584955642
