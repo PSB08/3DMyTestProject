@@ -4950,7 +4950,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.33333334
+  m_VoxelSize: 0.16666667
   m_MinRegionArea: 3
   m_NavMeshData: {fileID: 23800000, guid: 6f8b53de4b6c353448a03a3b26f4d5f6, type: 2}
   m_BuildHeightMesh: 0
@@ -6562,8 +6562,16 @@ PrefabInstance:
       propertyPath: m_detectionHeight
       value: 3.35
       objectReference: {fileID: 0}
+    - target: {fileID: 3177474708539373654, guid: 56ed3a9564f932e4aba6babf56657f5c, type: 3}
+      propertyPath: m_playerLayerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4615855687673498026, guid: 56ed3a9564f932e4aba6babf56657f5c, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615855687673498026, guid: 56ed3a9564f932e4aba6babf56657f5c, type: 3}
+      propertyPath: detectionMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
