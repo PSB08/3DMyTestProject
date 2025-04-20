@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GraphOwnerName: Self
   m_AutoSaveLastSaveLocation: 1
-  m_SaveFolder: A.Work/01.Scripts/12.BT/EventScript
+  m_SaveFolder: A.Work/02.Assets/12.BTEnemyFolder/_Scripts/Events
   m_UseSeparateSaveFolders: 0
   m_SaveFolderAction: 
   m_SaveFolderModifier: 
