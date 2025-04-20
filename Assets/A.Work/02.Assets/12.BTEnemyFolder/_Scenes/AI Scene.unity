@@ -6572,7 +6572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4615855687673498026, guid: 56ed3a9564f932e4aba6babf56657f5c, type: 3}
       propertyPath: detectionMask.m_Bits
-      value: 0
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6603,6 +6603,7 @@ MonoBehaviour:
   m_BlackboardVariableOverridesList:
   - rid: 8930767167898517686
   - rid: 8930767167898517687
+  - rid: 8930767167898517998
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
@@ -6624,6 +6625,25 @@ MonoBehaviour:
           m_Value1: 13838884866402568414
         Name: Target
         m_Value: {fileID: 6700802826180313747}
+    - rid: 8930767167898517998
+      type: {class: 'BlackboardVariable`1[[RangeDetector, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 4971929005386205983
+          m_Value1: 1883711714398255467
+        Name: New Range Detector
+        m_Value: {fileID: 2878426043443916154}
+--- !u!114 &2878426043443916154 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4615855687673498026, guid: 56ed3a9564f932e4aba6babf56657f5c, type: 3}
+  m_PrefabInstance: {fileID: 2878426043443916151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2878426043443916152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6fa4c7c95d266489a28466ecc92337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3093767352584955642
 PrefabInstance:
   m_ObjectHideFlags: 0
