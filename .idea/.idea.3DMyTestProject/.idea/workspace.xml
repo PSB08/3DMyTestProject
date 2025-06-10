@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7614573-a189-4434-a6f0-d2221f77965c" name="변경" comment="" />
+    <list default="true" id="d7614573-a189-4434-a6f0-d2221f77965c" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.3DMyTestProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DMyTestProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/A.Work/00.Scene/14.Math.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/00.Scene/14.Math.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/14.Math/YoumuuEasingSpeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/14.Math/HecarimEasingSpeed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/14.Math/YoumuuEasingSpeed.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/14.Math/HecarimEasingSpeed.cs.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +103,10 @@
       <workItem from="1747130904388" duration="68000" />
       <workItem from="1748411793677" duration="4721000" />
       <workItem from="1748834592036" duration="788000" />
+      <workItem from="1749526641619" duration="2915000" />
+      <workItem from="1749533346837" duration="799000" />
+      <workItem from="1749534496172" duration="107000" />
+      <workItem from="1749538074370" duration="339000" />
     </task>
     <servers />
   </component>
