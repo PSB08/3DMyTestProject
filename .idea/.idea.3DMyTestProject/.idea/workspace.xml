@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7614573-a189-4434-a6f0-d2221f77965c" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/15.EditorClass/Editor/EGWObjectField.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/15.EditorClass/Editor/EGWObjectField.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/15.EditorClass/Editor/EGWKnob.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/15.EditorClass/Editor/EGWKnob.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/15.EditorClass/Editor/EGWScope.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/15.EditorClass/Editor/EGWScope.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DMyTestProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DMyTestProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Blood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Blood.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Dark.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Dark.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Emission.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Emission.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Flies.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Flies.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Ice_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Ice_01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Ice_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Ice_02.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Rock_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Rock_01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Rock_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticleFX_Rock_02.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticles_Material_01_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Materials/PolygonParticles_Material_01_A.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/02.Assets/00.All/PolygonParticleFX/Scenes/Demo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/A.Work/00.Scene/15.EditorClass.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/00.Scene/15.EditorClass.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +109,7 @@
       <workItem from="1749533346837" duration="799000" />
       <workItem from="1749534496172" duration="107000" />
       <workItem from="1749538074370" duration="339000" />
-      <workItem from="1751270949273" duration="1468000" />
+      <workItem from="1751270949273" duration="4347000" />
     </task>
     <servers />
   </component>
