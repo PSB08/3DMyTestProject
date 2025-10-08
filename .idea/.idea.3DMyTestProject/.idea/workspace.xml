@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7614573-a189-4434-a6f0-d2221f77965c" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/15.EditorClass/Editor/EGWKnob.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/15.EditorClass/Editor/EGWKnob.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/15.EditorClass/Editor/EGWScope.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/15.EditorClass/Editor/EGWScope.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/17.Generic.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/17.Generic/ObservableCode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/17.Generic/ObservableCode.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DMyTestProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DMyTestProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/A.Work/00.Scene/15.EditorClass.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/00.Scene/15.EditorClass.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/A.Work/00.Scene/17.Generic.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/00.Scene/17.Generic.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/13.NodeMake/NodeMakeButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/A.Work/01.Scripts/13.NodeMake/NodeMakeButton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/A.Work/01.Scripts/17.Generic/ObservableCode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/18f5482d17338a7bbdeae155929167e4a8be10b5d2e9aed96c2562ed98f34f/System.Collections.ObjectModel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -45,7 +49,7 @@
 }</component>
   <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.58f2\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\ClubGit\3DMyTestProject -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\ClubGit\3DMyTestProject" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -53,10 +57,11 @@
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
       <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unity 시작" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.58f2\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\ClubGit\3DMyTestProject -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\ClubGit\3DMyTestProject" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -64,6 +69,7 @@
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
       <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -94,6 +100,9 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="기기에 연결" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -110,6 +119,8 @@
       <workItem from="1749534496172" duration="107000" />
       <workItem from="1749538074370" duration="339000" />
       <workItem from="1751270949273" duration="4347000" />
+      <workItem from="1759734676835" duration="934000" />
+      <workItem from="1759736923369" duration="1558000" />
     </task>
     <servers />
   </component>

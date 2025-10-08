@@ -13,7 +13,6 @@ namespace Scripts.Nodes
         public Node nodeA;
         public Node nodeB;
         public Node nodeC;
-        private bool isConnected = false;
 
         public GameObject uiPanel;
         public Button buttonB;
