@@ -119,63 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &73249950
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1311622726903225968, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.453
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311622726903225968, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.226
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311622726903225968, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.3862586
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311622726903225968, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311622726903225968, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311622726903225968, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311622726903225968, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311622726903225968, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311622726903225968, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311622726903225968, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1835218253259277514, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
-      propertyPath: m_Name
-      value: Chibi_Monkey_08
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6149a42a80e9e484da1a5cd4bc22040e, type: 3}
 --- !u!1001 &139870529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1213,4 +1156,3 @@ SceneRoots:
   - {fileID: 139870529}
   - {fileID: 656072070}
   - {fileID: 437561324}
-  - {fileID: 73249950}
