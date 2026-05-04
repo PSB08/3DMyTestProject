@@ -342,63 +342,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &656072070
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2364667107279771129, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364667107279771129, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364667107279771129, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364667107279771129, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364667107279771129, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364667107279771129, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364667107279771129, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364667107279771129, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364667107279771129, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364667107279771129, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142154196498140995, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
-      propertyPath: m_Name
-      value: Chibi_Monkey_06
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ad7b69a47a8c96d408cef12e671f183e, type: 3}
 --- !u!1001 &792548417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1097,4 +1040,3 @@ SceneRoots:
   - {fileID: 263339181}
   - {fileID: 1292671997}
   - {fileID: 139870529}
-  - {fileID: 656072070}
